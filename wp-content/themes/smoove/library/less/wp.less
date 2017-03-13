@@ -18,7 +18,58 @@
 /* ---- Header ---- */
 header {
 	.navbar {
-
+		padding: 20px 40px;
+		background-color: @dark-green;
+		a {
+			&.logo {
+				display: block;
+				padding-top: 10px;
+			}
+		}
+		.navbar-nav {
+			float: right;
+			> li {
+				a {
+					color: @white;
+					.transition(color .3s ease-in-out);
+					@media(min-width: @screen-lg) {
+						padding: 10px 20px;
+						font-size: 16px;
+					}
+					&:hover,
+					&:active,
+					&:focus {
+						color: @orange;
+						background: none;
+					}
+				}
+				&.sign-in {
+					a {
+						background-color: @orange;
+						border-radius: 20px;
+						text-transform: uppercase;
+						.transition(all .3s ease-in-out);
+						&:hover {
+							color: @white;
+							background-color: darken(@orange, 10%);
+						}
+					}
+				}
+			}
+		}
 	}
 }
 /* ---- end Header ---- */
+
+
+
+
+
+
+
+
+
+
+
+
+
