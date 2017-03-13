@@ -59,4 +59,3 @@
 		
 		</header> <!-- end header -->
 		
-		<div class="container">

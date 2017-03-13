@@ -6,6 +6,47 @@ Template Name: Homepage
 
 <?php get_header(); ?>
 			
+			<?php
+
+			// check if the flexible content field has rows of data
+			if( have_rows('section_1') ):
+
+			     // loop through the rows of data
+			    while ( have_rows('section_1') ) : the_row();
+
+			        if( get_row_layout() == 'section_1_content' ): ?>
+
+
+			        <div class="section-1 clearfix" style="background-image: url(<?php echo the_sub_field("background_image_1"); ?>);">
+
+				        <div class="container-fluid">
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="dis-ta">
+										<div class="text-container dis-cell text-center align-middle">
+											<?php elseif( get_row_layout() == 'section_1_content' ): 
+
+									        endif; ?>
+											<h2><?php echo the_sub_field("home_main_title_1"); ?></h2>
+											<h3><?php echo the_sub_field("home_sub_title_1"); ?></h3>
+										</div>
+									</div>
+								</div>
+							</div><!-- /.row -->
+						</div><!-- /.container -->
+					</div><!-- /.section -->
+
+			   <?php endwhile;
+
+			else :
+
+			    // no layouts found
+
+			endif;
+
+			?>
+		
+			
 			<div id="content" class="clearfix row">
 			
 				<div id="main" class="col-sm-12 clearfix" role="main">

@@ -1,3 +1,6 @@
+			
+		<div class="container">
+		
 			<footer role="contentinfo">
 			
 				<div id="inner-footer" class="clearfix">
