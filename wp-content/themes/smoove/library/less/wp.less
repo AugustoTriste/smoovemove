@@ -31,6 +31,36 @@
 	font-size: 16px;
 	font-weight: 600;
 	text-transform: uppercase;
+	.transition(background-color .3s ease-in-out);
+	&:hover {
+		color: @white;
+		background-color: darken(@orange, 10%);
+	}
+}
+.col-center {
+	float: none;
+	margin: 0 auto;
+}
+.bg-full {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+h2 {
+	margin: 20px;
+	font-size: 36px;
+	@media(max-width: @screen-sm-m) {
+		font-size: 30px;
+	}
+	@media(max-width: @screen-xs-m) {
+		font-size: 24px;
+	}
+}
+p {
+	font-family: @lato;
 }
 /* ---- end Helper Classes ---- */
 
@@ -82,13 +112,7 @@ header {
 
 /* ---- Homepage ---- */
 .section-1 {
-	position: relative;
-	width: 100%;
-	height: 100vh;
-  overflow: hidden;
-  color: @white;
-  background-size: cover;
-  background-repeat: no-repeat;
+	color: @white;
   h2 {
   	font-size: 79px;
   	font-weight: 600;
@@ -129,18 +153,7 @@ header {
 			margin-bottom: 10px;
 		}
 	}
-	h2 {
-		margin: 20px;
-		font-size: 36px;
-		@media(max-width: @screen-sm-m) {
-			font-size: 30px;
-		}
-		@media(max-width: @screen-xs-m) {
-			font-size: 24px;
-		}
-	}
 	p {
-		font-family: @lato;
 		@media(min-width: @screen-xs) {
 			font-size: 20px;
 		}
@@ -163,6 +176,27 @@ header {
 	padding: 0 0 98px;
 	@media(max-width: @screen-xs-m) {
 		padding: 0 0 44px;
+	}
+}
+
+.section-3 {
+	color: @white;
+	h2 {
+		margin-bottom: 35px;
+		font-size: 46px;
+		@media(max-width: @screen-xs-m) {
+			margin-bottom: 10px;
+			font-size: 30px;
+		}
+	}
+	p {
+		font-weight: 300;
+		@media(min-width: @screen-xs) {
+			font-size: 20px;
+		}
+	}
+	.button-row {
+		margin-top: 50px;
 	}
 }
 /* ---- end Homepage ---- */

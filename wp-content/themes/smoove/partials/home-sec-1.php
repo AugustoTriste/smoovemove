@@ -1,4 +1,4 @@
-<div class="section-1 clearfix" style="background-image: url(<?php echo the_sub_field("background_image_1"); ?>);">
+<div class="section-1 bg-full" style="background-image: url(<?php echo the_sub_field("background_image_1"); ?>);">
     <div class="container-fluid">
 		<div class="row">
 			<div class="col-sm-12">
