@@ -548,6 +548,12 @@ add_filter('nav_menu_css_class', 'wp_bootstrap_add_active_class', 10, 2 );
 if( !function_exists("wp_bootstrap_theme_styles") ) {  
     function wp_bootstrap_theme_styles() { 
         // This is the compiled css file from LESS - this means you compile the LESS file locally and put it in the appropriate directory if you want to make any changes to the master bootstrap.css.
+        wp_register_style( 'owl-css', get_template_directory_uri() . '/bower_components/owl/owl-carousel/owl.carousel.css', array(), '1.0', 'all' );
+        wp_enqueue_style( 'owl-css' );
+
+        wp_register_style( 'owl-theme-css', get_template_directory_uri() . '/bower_components/owl/owl-carousel/owl.theme.css', array(), '1.0', 'all' );
+        wp_enqueue_style( 'owl-theme-css' );
+
         wp_register_style( 'wpbs', get_template_directory_uri() . '/library/dist/css/styles.e9bee10b.min.css', array(), '1.0', 'all' );
         wp_enqueue_style( 'wpbs' );
 
@@ -573,8 +579,13 @@ if( !function_exists( "wp_bootstrap_theme_js" ) ) {
       array('jquery'), 
       '1.2' );
 
+     wp_register_script( 'owl-carousel', 
+      get_template_directory_uri() . '/bower_components/owl/owl-carousel/owl.carousel.min.js', 
+      array('jquery'), 
+      '1.2' );
+
     wp_register_script( 'wpbs-js', 
-      get_template_directory_uri() . '/library/dist/js/scripts.0841a5c3.min.js',
+      get_template_directory_uri() . '/library/dist/js/scripts.a46cfcfc.min.js',
       array('bootstrap'), 
       '1.2' );
   
@@ -584,6 +595,7 @@ if( !function_exists( "wp_bootstrap_theme_js" ) ) {
       '1.2' );
   
     wp_enqueue_script( 'bootstrap' );
+    wp_enqueue_script( 'owl-carousel' );
     wp_enqueue_script( 'wpbs-js' );
     wp_enqueue_script( 'modernizr' );
     
