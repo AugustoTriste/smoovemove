@@ -1,5 +1,6 @@
 <div class="section-2-images">
     <div class="container">
+    	<div class="row">
 		 <?php
             if(have_rows("images_row")):
                 while(have_rows("images_row")): the_row();
@@ -19,5 +20,6 @@
                 endwhile;
             endif;
         ?>
+        </div><!-- /.row -->
 	</div><!-- /.container -->
 </div><!-- /.section -->

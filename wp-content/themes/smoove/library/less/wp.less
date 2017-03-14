@@ -23,6 +23,15 @@
 .align-middle {
 	vertical-align: middle;
 }
+.btn-orange {
+	padding: 12px 40px;
+	color: @white;
+	background-color: @orange;
+	border-radius: 30px;
+	font-size: 16px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
 /* ---- end Helper Classes ---- */
 
 /* ---- Header ---- */
@@ -139,10 +148,7 @@ header {
 }
 
 .section-2-images {
-	padding: 0 0 98px;
-	@media(max-width: @screen-xs-m) {
-		padding: 0 0 44px;
-	}
+	padding: 0 0 44px;
 	img {
 		.center-block();
 		margin-bottom: 40px;
@@ -150,6 +156,13 @@ header {
 	p {
 		font-weight: 300;
 		line-height: 1.5;
+	}
+}
+
+.sec-2-button {
+	padding: 0 0 98px;
+	@media(max-width: @screen-xs-m) {
+		padding: 0 0 44px;
 	}
 }
 /* ---- end Homepage ---- */
