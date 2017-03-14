@@ -72,5 +72,12 @@ jQuery(document).ready(function($) {
 	$('.alert-message').alert();
 	
 	$('.dropdown-toggle').dropdown();
+
+  	$('.owl-carousel').owlCarousel({
+          loop:true,
+          responsiveClass:true,
+          items:1,
+          dots: true
+      });
  
 });
