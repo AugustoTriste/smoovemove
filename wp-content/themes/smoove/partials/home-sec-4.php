@@ -40,7 +40,7 @@
 			        				</div>                     
 				                </div>             
 					        <?php
-					                endwhile;
+					            endwhile;
 					            endif;
 					        ?>
 						</div>
@@ -48,5 +48,10 @@
 				</div>
 			</div>
 		</div><!-- /.row -->
+		<div class="row button-row text-center">
+		    <div class="col-sm-6 col-center">
+		        <a href="<?php the_sub_field("section_4_get_app_button_url"); ?>" class="btn btn-orange" target="_blank">Get the App</a>
+		    </div>
+		</div>
 	</div><!-- /.container -->
 </div><!-- /.section -->
