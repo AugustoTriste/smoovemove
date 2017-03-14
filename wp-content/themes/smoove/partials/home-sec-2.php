@@ -7,19 +7,5 @@
 				<p><?php echo the_sub_field("sec_2_sub_title"); ?></p>
 			</div>
 		</div><!-- /.row -->
-		<div class="row">
-			<div class="col-sm-4">
-				<img src="" alt="">
-				<p></p>
-			</div>
-			<div class="col-sm-4">
-				<img src="" alt="">
-				<p></p>
-			</div>
-			<div class="col-sm-4">
-				<img src="" alt="">
-				<p></p>
-			</div>
-		</div>
 	</div><!-- /.container -->
 </div><!-- /.section -->
