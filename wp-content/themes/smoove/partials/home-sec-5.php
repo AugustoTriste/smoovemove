@@ -6,7 +6,7 @@
 				<p class="sub-title"><?php echo the_sub_field("sec_3_sub_title"); ?></p>
 			</div>
 		</div><!-- /.row -->
-		<div class="row">
+		<div class="row posts-row">
 			<?php 
 			   // the query
 			   $the_query = new WP_Query( array(
@@ -20,8 +20,8 @@
 			    	<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">
 			    		<?php the_post_thumbnail( 'wpbs-featured' ); ?>
 			    	</a>
-			    	<?php the_title(); ?>
-			    	<?php the_excerpt(); ?>
+			    	<p class="meta"><?php _e("", "wpbootstrap"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php echo get_the_date('jS M, Y', '','', FALSE); ?></time> <?php _e("/", "wpbootstrap"); ?> <?php the_category(', '); ?>.</p>
+			    	<h4><?php the_title(); ?></h4>
 			    </div>
 
 			  <?php endwhile; ?>
@@ -30,6 +30,11 @@
 			<?php else : ?>
 			  <p><?php __('No News'); ?></p>
 			<?php endif; ?>
-		</div>
+		</div><!-- /.row.posts-row -->
+		<div class="row button-row text-center">
+		    <div class="col-sm-6 col-center">
+		        <a href="#" class="btn btn-orange" target="_blank">View all articles</a>
+		    </div>
+		</div><!-- /.row.button-row -->
 	</div><!-- /.container -->
 </div><!-- /.section -->
