@@ -1,0 +1,52 @@
+<div class="section-4">
+    <div class="container">
+		<div class="row">
+			<div class="col-sm-8 col-center text-center">
+				<div class="main-text">
+					<div class="inner-container dis-cell align-middle">
+						<h2><?php echo the_sub_field("sec_4_title"); ?></h2>
+						<p class="sub-title"><?php echo the_sub_field("sec_4_sub_title"); ?></p>
+					</div>
+				</div><!-- /.dis-ta -->
+			</div><!-- /.col-sm-5 -->
+		</div><!-- /.row -->
+		<div class="row">
+			<div class="col-lg-10 col-md-12 col-center">
+				<div class="row">
+					<div class="col-sm-6">
+						<img class="large-img" src="<?php echo the_sub_field("sec_4_img"); ?>" alt="Smoove Move App">
+					</div>
+					<div class="col-sm-6">
+						<div class="row icons-row">
+							<?php
+					            if(have_rows("section_4_icons")):
+					                while(have_rows("section_4_icons")): the_row();
+					                $column_image = get_sub_field("image");                
+					        ?>
+			        			<div class="col-sm-12">
+			        				<div class="dis-ta">
+			        					 <?php
+					                    if(!empty($column_image)):
+					                    ?>
+					                        <div class="img dis-cell">
+					                        	<img src="<?php the_sub_field("image"); ?>">
+					                        </div>
+					                    <?php
+					                    endif;
+					                    ?>
+					                        <div class="text dis-cell">
+					                        	<p class="sub-title text-center"><?php the_sub_field("text"); ?></p> 
+					                        </div>  
+			        				</div>                     
+				                </div>             
+					        <?php
+					                endwhile;
+					            endif;
+					        ?>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- /.row -->
+	</div><!-- /.container -->
+</div><!-- /.section -->

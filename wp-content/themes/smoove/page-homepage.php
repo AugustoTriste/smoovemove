@@ -19,7 +19,9 @@ Template Name: Homepage
              elseif(get_row_layout() == "section_2_button"):
                 include("partials/home-sec-2-button.php");
              elseif(get_row_layout() == "section_3_content"):
-                include("partials/home-sec-3.php");                          
+                include("partials/home-sec-3.php");
+             elseif(get_row_layout() == "section_4_content"):
+                include("partials/home-sec-4.php");                       
             endif;
 
             
