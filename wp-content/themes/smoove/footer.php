@@ -1,32 +1,29 @@
 			
-		<div class="container">
-		
-			<footer role="contentinfo">
+		<footer role="contentinfo" class="bottom">
+
+			<div class="container">
 			
 				<div id="inner-footer" class="clearfix">
-		          <hr />
+
 		          <div id="widget-footer" class="clearfix row">
 		            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer1') ) : ?>
 		            <?php endif; ?>
 		            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer2') ) : ?>
 		            <?php endif; ?>
-		            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer3') ) : ?>
-		            <?php endif; ?>
+		            <div class="col-lg-4">
+		            	<nav class="clearfix">
+							<?php wp_bootstrap_footer_links(); // Adjust using Menus in Wordpress Admin ?>
+						</nav>
+					
+		            </div>
 		          </div>
 					
-					<nav class="clearfix">
-						<?php wp_bootstrap_footer_links(); // Adjust using Menus in Wordpress Admin ?>
-					</nav>
-					
-					<p class="pull-right"><a href="http://320press.com" id="credit320" title="By the dudes of 320press">320press</a></p>
-			
-					<p class="attribution">&copy; <?php bloginfo('name'); ?></p>
-				
 				</div> <!-- end #inner-footer -->
-				
-			</footer> <!-- end footer -->
+
+			</div> <!-- end #container -->		
 		
-		</div> <!-- end #container -->
+		</footer> <!-- end footer -->
+		
 				
 		<!--[if lt IE 7 ]>
   			<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
