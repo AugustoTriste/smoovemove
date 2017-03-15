@@ -40,12 +40,6 @@
 			<div class="navbar navbar-fixed-top">
           
 				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-
 					<a class="logo" title="<?php echo get_bloginfo('description'); ?>" href="<?php echo home_url(); ?>">
 						<img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="">
 					</a>
