@@ -51,9 +51,42 @@
 					</a>
 				</div>
 
-				<div class="collapse navbar-collapse navbar-responsive-collapse">
-					<?php wp_bootstrap_main_nav(); // Adjust using Menus in Wordpress Admin ?>
+				<div class="visible-lg">
+					<?php wp_bootstrap_main_nav(); // Desktop Nav ?>
 				</div>
+				
+				<div class="overlay-logo hidden-lg">
+					
+				</div>
+				<div class="button hidden-lg">
+				    <a class="btn-open" href="#"></a>
+				</div>
+
+				<div class="overlay">
+					<div class="wrap">
+						<img class="overlay-logo" src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="">
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="nav-wrap dis-ta">
+									<div class="inner-nav dis-cell align-middle">
+										<?php wp_bootstrap_main_nav(); // Overlay Nav ?>
+										<div class="bottom clearfix row">
+								            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer1') ) : ?>
+								            <?php endif; ?>
+								            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer2') ) : ?>
+								            <?php endif; ?>
+								            <div class="col-lg-4">
+								            	<nav class="clearfix">
+													<?php wp_bootstrap_footer_links(); // Adjust using Menus in Wordpress Admin ?>
+												</nav>
+								            </div>
+								        </div>
+									</div>
+								</div>
+							</div><!-- /.col-sm-12 -->
+						</div><!-- /.row -->
+					</div><!-- /.wrap -->
+				</div><!-- /.overlay -->
 
 			</div> <!-- end .navbar -->
 		
