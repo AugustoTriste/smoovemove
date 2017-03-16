@@ -1,4 +1,4 @@
-<div class="section-5">
+<div class="section-5 blog-section">
     <div class="container">
 		<div class="row text-center">
 			<div class="col-sm-8 col-center">

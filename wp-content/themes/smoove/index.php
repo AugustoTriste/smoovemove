@@ -1,38 +1,51 @@
 <?php get_header(); ?>
 
-		<div class="container">
+		<div class="blog-section">
+			<div class="container">
 			
-			<div id="content" class="clearfix row">
-			
-				<div id="main" class="col-sm-12 clearfix" role="main">
+				<div id="content" class="row posts-row">
 
-					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-					
-					<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
+					<div class="col-sm-12">
+						<?php 
+				            $startRow = true;
+				            $postCounter = 0;
+				        ?>
+
+						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
+						<?php
+					        if ($startRow) {
+					          echo '<!-- START OF INTERNAL ROW --><div class="row">';
+					          $startRow = false;
+					        }  
+				        ?>
+				        <?php $postCounter += 1; ?>
 						
-						<header>
+						<div class="col-sm-4">
+					    	<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">
+					    		<?php the_post_thumbnail( 'wpbs-featured' ); ?>
+					    	</a>
+					    	<p class="meta"><?php _e("", "wpbootstrap"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php echo get_the_date('jS M, Y', '','', FALSE); ?></time> <?php _e("/", "wpbootstrap"); ?> <?php the_category(', '); ?>.</p>
+					    	<h4><?php the_title(); ?></h4>
+					    </div>
+
+					     <?php 
+				            if ( 3 === $postCounter ) {
+				                echo '</div><!-- END OF INTERNAL ROW -->';
+				                $startRow = true;
+				                $postCounter = 0;
+				            }
+			            ?>
 						
-							<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail( 'wpbs-featured' ); ?></a>
-							
-							<div class="page-header"><h1 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1></div>
-							
-							<p class="meta"><?php _e("Posted", "wpbootstrap"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php echo get_the_date('F jS, Y', '','', FALSE); ?></time> <?php _e("by", "wpbootstrap"); ?> <?php the_author_posts_link(); ?> <span class="amp">&</span> <?php _e("filed under", "wpbootstrap"); ?> <?php the_category(', '); ?>.</p>
-						
-						</header> <!-- end article header -->
-					
-						<section class="post_content clearfix">
-							<?php the_content( __("Read more &raquo;","wpbootstrap") ); ?>
-						</section> <!-- end article section -->
-						
-						<footer>
-			
-							<p class="tags"><?php the_tags('<span class="tags-title">' . __("Tags","wpbootstrap") . ':</span> ', ' ', ''); ?></p>
-							
-						</footer> <!-- end article footer -->
-					
-					</article> <!-- end article -->
-					
-					<?php endwhile; ?>	
+						<?php endwhile; ?>
+
+						<?php 
+				            if ($postCounter !== 0 ) {
+				              echo '</div><!-- END OF INTERNAL ROW -->';
+				            }
+			            ?>
+					</div>
+
 					
 					<?php if (function_exists('wp_bootstrap_page_navi')) { // if expirimental feature is active ?>
 						
@@ -61,11 +74,10 @@
 					</article>
 					
 					<?php endif; ?>
-			
-				</div> <!-- end #main -->
-    
-			</div> <!-- end #content -->
+	    
+				</div> <!-- end #content -->
 
-		</div><!-- /.container -->
+			</div><!-- /.container -->
+		</div><!-- /.blog-section -->
 
 <?php get_footer(); ?>
