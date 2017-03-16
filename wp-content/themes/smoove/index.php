@@ -30,7 +30,7 @@
 
 						<?php
 					        if ($startRow) {
-					          echo '<!-- START OF INTERNAL ROW --><div class="row">';
+					          echo '<!-- START OF INTERNAL ROW --><div class="row post-row">';
 					          $startRow = false;
 					        }  
 				        ?>
