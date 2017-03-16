@@ -64,6 +64,38 @@ p {
 }
 /* ---- end Helper Classes ---- */
 
+/* ---- Global ---- */
+.header-text {
+	color: @white;
+  h2 {
+  	font-size: 79px;
+  	font-weight: 600;
+  	text-transform: uppercase;
+  	@media(max-width: @screen-sm-m) {
+  		font-size: 59px;
+  	}
+  	@media(max-width: @screen-xs-m) {
+  		font-size: 30px;
+  	}
+  }
+  h3 {
+  	font-family: @lato;
+  	font-size: 24px;
+  	line-height: 1.5;
+  	br {
+  		display: none;
+  	}
+  	@media(max-width: @screen-sm-m) {
+  		font-size: 18px;
+  	}
+  	@media(max-width: @screen-xs-m) {
+  		font-size: 16px;
+  		line-height: 1.3;
+  	}
+  }
+}
+/* ---- end Global ---- */
+
 /* ---- Header ---- */
 header {
 	.navbar {
@@ -233,33 +265,7 @@ header {
 
 /* ---- Homepage ---- */
 .section-1 {
-	color: @white;
-  h2 {
-  	font-size: 79px;
-  	font-weight: 600;
-  	text-transform: uppercase;
-  	@media(max-width: @screen-sm-m) {
-  		font-size: 59px;
-  	}
-  	@media(max-width: @screen-xs-m) {
-  		font-size: 30px;
-  	}
-  }
-  h3 {
-  	font-family: @lato;
-  	font-size: 24px;
-  	line-height: 1.5;
-  	br {
-  		display: none;
-  	}
-  	@media(max-width: @screen-sm-m) {
-  		font-size: 18px;
-  	}
-  	@media(max-width: @screen-xs-m) {
-  		font-size: 16px;
-  		line-height: 1.3;
-  	}
-  }
+	
 }
 
 .section-2 {
