@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+			
 			<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
 
 			<div class="blog-header bg-full" style="background-image: url('<?php echo $thumb['0'];?>');">
@@ -9,8 +9,7 @@
 							<div class="col-md-6 col-center">
 								<div class="dis-ta header-text">
 									<div class="text-container dis-cell text-center align-middle">
-										<h2><?php the_field('blog_title', get_option('page_for_posts')); ?></h2>
-										<h3><?php the_field('blog_sub_title', get_option('page_for_posts')); ?></h3>
+										<h2><?php the_title(); ?></h2>
 									</div>
 								</div>
 							</div><!-- /.row -->
