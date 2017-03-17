@@ -132,12 +132,31 @@ p {
 /* ---- end Global ---- */
 
 /* ---- Header ---- */
+body.down {
+	header {
+		.navbar {
+			&.clone {
+				top: 0;
+			}
+		}
+  }  
+}
 header {
 	.navbar {
+		margin-bottom: 0;
 		padding: 20px 40px;
 		background-color: @dark-green;
+		border-radius: 0;
 		@media(max-width: @screen-xs-m) {
 			padding: 10px 15px;
+		}
+		&.clone {
+			position:fixed;
+	    top: -82px;
+	    left: 0;
+	    right: 0;
+	    z-index: 999;
+	    .transition(0.4s top cubic-bezier(.3,.73,.3,.74))
 		}
 		a {
 			&.logo {

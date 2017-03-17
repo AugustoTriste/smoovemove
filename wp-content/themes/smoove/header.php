@@ -37,7 +37,7 @@
 				
 		<header role="banner">
 				
-			<div class="navbar navbar-fixed-top">
+			<div id="navbar-scroll" class="navbar">
           
 				<div class="navbar-header">
 					<a class="logo" title="<?php echo get_bloginfo('description'); ?>" href="<?php echo home_url(); ?>">
