@@ -2,13 +2,13 @@
 			
 			<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
 
-			<div class="blog-header bg-full" style="background-image: url('<?php echo $thumb['0'];?>');">
+			<div class="blog-header bg-full parallax-header" style="background-image: url('<?php echo $thumb['0'];?>');">
 			    <div class="tinted-bg">
 			    	<div class="container-fluid">
 						<div class="row">
-							<div class="col-md-6 col-center">
-								<div class="dis-ta header-text">
-									<div class="text-container dis-cell text-center align-middle">
+							<div class="col-lg-6 col-md-8">
+								<div class="dis-ta header-text parallax-text">
+									<div class="text-container dis-cell text-center align-bottom">
 										<h2 itemprop="headline"><?php the_title(); ?></h2>
 									</div>
 								</div>
