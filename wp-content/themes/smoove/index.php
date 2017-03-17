@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 
-		<div class="blog-header bg-full" style="background-image: url(<?php the_field('blog_bg_image', get_option('page_for_posts')); ?>);">
+		<div class="blog-header bg-full parallax-header" style="background-image: url(<?php the_field('blog_bg_image', get_option('page_for_posts')); ?>);">
 		    <div class="container-fluid">
 				<div class="row">
 					<div class="col-md-6 col-center">
-						<div class="dis-ta header-text">
+						<div class="dis-ta header-text parallax-text">
 							<div class="text-container dis-cell text-center align-middle">
 								<h2><?php the_field('blog_title', get_option('page_for_posts')); ?></h2>
 								<h3><?php the_field('blog_sub_title', get_option('page_for_posts')); ?></h3>

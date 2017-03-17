@@ -92,5 +92,19 @@ jQuery(document).ready(function($) {
 	    $(".button a").toggleClass('btn-open').toggleClass('btn-close');
 	    open = false;
 	});
+
+	function scrollBanner() {
+	  $(document).scroll(function(){
+	  	var scrollPos = $(this).scrollTop();
+	  	$('.parallax-text').css({
+	  	  'top' : (scrollPos/3)+'px',
+	  	  'opacity' : 1-(scrollPos/510)
+	  	});
+	  	$('.parallax-header').css({
+	  	  'background-position' : 'center ' + (-scrollPos/2)+'px'
+	  	});
+	  });    
+	}
+	scrollBanner();
  
 });
