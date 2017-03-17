@@ -454,7 +454,7 @@ if( !function_exists("wp_bootstrap_theme_styles") ) {
         wp_register_style( 'owl-theme-css', get_template_directory_uri() . '/bower_components/owl/owl-carousel/owl.theme.css', array(), '1.0', 'all' );
         wp_enqueue_style( 'owl-theme-css' );
 
-        wp_register_style( 'wpbs', get_template_directory_uri() . '/library/dist/css/styles.95d67c69.min.css', array(), '1.0', 'all' );
+        wp_register_style( 'wpbs', get_template_directory_uri() . '/library/dist/css/styles.0c6b855d.min.css', array(), '1.0', 'all' );
         wp_enqueue_style( 'wpbs' );
 
         // For child themes
