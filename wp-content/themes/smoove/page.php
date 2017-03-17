@@ -1,57 +1,69 @@
 <?php get_header(); ?>
 			
-			<div id="content" class="clearfix row">
+			<div class="section-1 bg-full parallax-header" style="background-image: url(<?php the_field("header_background_image"); ?>);">
+			    <div class="container-fluid">
+					<div class="row">
+						<div class="col-md-6 col-center">
+							<div class="dis-ta header-text parallax-text">
+								<div class="text-container dis-cell text-center align-middle">
+									<h2 itemprop="headline"><?php the_title(); ?></h2>
+									<h3><?php the_field("page_sub_title"); ?></h3>
+								</div>
+							</div>
+						</div>
+					</div><!-- /.row -->
+				</div><!-- /.container -->
+			</div><!-- /.section -->
 			
-				<div id="main" class="col-sm-8 clearfix" role="main">
+			<div class="container">
+				<div class="content clearfix row">
+			
+					<div id="main" class="col-sm-12 clearfix" role="main">
 
-					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-					
-					<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 						
-						<header>
+						<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+						
+							<section class="post_content clearfix" itemprop="articleBody">
+								<?php the_content(); ?>
+						
+							</section> <!-- end article section -->
 							
-							<div class="page-header"><h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1></div>
+							<footer>
+				
+								<?php the_tags('<p class="tags"><span class="tags-title">' . __("Tags","wpbootstrap") . ':</span> ', ', ', '</p>'); ?>
+								
+							</footer> <!-- end article footer -->
+						
+						</article> <!-- end article -->
+						
+						<?php endwhile; ?>		
+						
+						<?php else : ?>
+						
+						<?php endif; ?>
+				
+					</div> <!-- end #main -->
+	    
+				</div> <!-- end #content -->
+			</div><!-- /.container -->
 
-							<h1>THIS IS THE PAGE TEMPLATE</h1>
-						
-						</header> <!-- end article header -->
-					
-						<section class="post_content clearfix" itemprop="articleBody">
-							<?php the_content(); ?>
-					
-						</section> <!-- end article section -->
-						
-						<footer>
-			
-							<?php the_tags('<p class="tags"><span class="tags-title">' . __("Tags","wpbootstrap") . ':</span> ', ', ', '</p>'); ?>
-							
-						</footer> <!-- end article footer -->
-					
-					</article> <!-- end article -->
-					
-					<?php comments_template('',true); ?>
-					
-					<?php endwhile; ?>		
-					
-					<?php else : ?>
-					
-					<article id="post-not-found">
-					    <header>
-					    	<h1><?php _e("Not Found", "wpbootstrap"); ?></h1>
-					    </header>
-					    <section class="post_content">
-					    	<p><?php _e("Sorry, but the requested resource was not found on this site.", "wpbootstrap"); ?></p>
-					    </section>
-					    <footer>
-					    </footer>
-					</article>
-					
-					<?php endif; ?>
-			
-				</div> <!-- end #main -->
-    
-				<?php get_sidebar(); // sidebar 1 ?>
-    
-			</div> <!-- end #content -->
+			<div class="section-3 bg-full" style="background-image: url(<?php the_field("page_middle_background"); ?>);">
+			    <div class="container">
+					<div class="row">
+						<div class="col-sm-8 col-center text-center">
+							<div class="dis-ta">
+								<div class="inner-container dis-cell align-middle">
+									<h2><?php the_field("middle_section_title"); ?></h2>
+									<p class="sub-title"><?php the_field("middle_section_sub_title"); ?></p>
+									<div class="button-row">
+										<a href="<?php echo the_sub_field("middle_section_button_url"); ?>" class="btn btn-orange"><?php the_field("middle_section_button_text"); ?></a>
+									</div>
+								</div>
+							</div><!-- /.dis-ta -->
+						</div><!-- /.col-sm-5 -->
+					</div><!-- /.row -->
+				</div><!-- /.container -->
+			</div><!-- /.section -->
 
 <?php get_footer(); ?>
