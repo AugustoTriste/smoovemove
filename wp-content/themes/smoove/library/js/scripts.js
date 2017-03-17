@@ -100,9 +100,9 @@ jQuery(document).ready(function($) {
 	  	  'top' : (scrollPos/3)+'px',
 	  	  'opacity' : 1-(scrollPos/510)
 	  	});
-	  	$('.parallax-header').css({
-	  	  'background-position' : 'center ' + (-scrollPos/2)+'px'
-	  	});
+	  	// $('.parallax-header').css({
+	  	//   'background-position' : 'center ' + (-scrollPos/2)+'px'
+	  	// });
 	  });    
 	}
 	scrollBanner();
