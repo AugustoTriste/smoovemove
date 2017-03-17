@@ -9,7 +9,7 @@
 							<div class="col-md-6 col-center">
 								<div class="dis-ta header-text">
 									<div class="text-container dis-cell text-center align-middle">
-										<h2><?php the_title(); ?></h2>
+										<h2 itemprop="headline"><?php the_title(); ?></h2>
 									</div>
 								</div>
 							</div><!-- /.row -->
@@ -17,6 +17,21 @@
 					</div><!-- /.container -->
 			    </div><!-- /.tinted-ng -->
 			</div><!-- /.blog-header -->
+
+			<div class="date-bar">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-6">
+							<p class="meta"><?php _e("", "wpbootstrap"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php echo get_the_date('jS F, Y', '','', FALSE); ?></time> <?php _e("", "wpbootstrap"); ?> </p>
+						</div>
+						<div class="col-xs-6">
+							<div class="cat text-right">
+								<a href="#share">Share</a>
+							</div>
+						</div>
+					</div><!-- /.row -->
+				</div><!-- /.container -->
+			</div><!-- /.date-bar -->
 			
 			<div class="container">
 				<div id="content" class="clearfix row">
@@ -26,16 +41,6 @@
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 						
 						<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
-							
-							<header>
-
-								<h1>THIS IS THE SINGLE TEMPLATE</h1>
-								
-								<div class="page-header"><h1 class="single-title" itemprop="headline"><?php the_title(); ?></h1></div>
-								
-								<p class="meta"><?php _e("Posted", "wpbootstrap"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php echo get_the_date('F jS, Y', '','', FALSE); ?></time> <?php _e("by", "wpbootstrap"); ?> <?php the_author_posts_link(); ?> <span class="amp">&</span> <?php _e("filed under", "wpbootstrap"); ?> <?php the_category(', '); ?>.</p>
-							
-							</header> <!-- end article header -->
 						
 							<section class="post_content clearfix" itemprop="articleBody">
 								<?php the_content(); ?>
