@@ -29,8 +29,6 @@
 						<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 							
 							<header>
-								
-								<?php the_post_thumbnail( 'wpbs-featured' ); ?>
 
 								<h1>THIS IS THE SINGLE TEMPLATE</h1>
 								
