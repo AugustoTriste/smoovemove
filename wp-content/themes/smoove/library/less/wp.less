@@ -107,6 +107,23 @@ p {
 	@media(max-width: @screen-xs-m) {
 		padding: 20px 0 0 0;
 	}
+	h2, h3, h4, h5 {
+		margin: 25px 0 15px 0;
+	}
+	p {
+		font-family: @lato;
+		font-weight: 300;
+		line-height: 1.6;
+		@media(min-width: @screen-xs) {
+			font-size: 16px;
+		}
+		&.lead {
+			@media (min-width: @screen-sm-min) {
+		    font-size: (@font-size-base * 1.4);
+		    font-weight: 700;
+		  }
+		}
+	}
 }
 /* ---- end Global ---- */
 
