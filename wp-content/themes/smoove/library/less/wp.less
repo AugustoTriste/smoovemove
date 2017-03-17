@@ -41,6 +41,9 @@
 	float: none;
 	margin: 0 auto;
 }
+/* ---- end Helper Classes ---- */
+
+/* ---- Global ---- */
 .bg-full {
 	position: relative;
 	width: 100%;
@@ -48,6 +51,11 @@
   overflow: hidden;
   background-size: cover;
   background-repeat: no-repeat;
+  .tinted-bg {
+  	width:100%;
+	  height:100%;
+	  background-color: rgba(0,0,0,0.5);
+  }
 }
 h2 {
 	margin: 20px;
@@ -62,9 +70,6 @@ h2 {
 p {
 	font-family: @lato;
 }
-/* ---- end Helper Classes ---- */
-
-/* ---- Global ---- */
 .header-text {
 	color: @white;
   h2 {
