@@ -50,12 +50,29 @@
 							</section> <!-- end article section -->
 							
 							<footer>
-				
-								<?php the_tags('<p class="tags"><span class="tags-title">' . __("Tags","wpbootstrap") . ':</span> ', ' ', '</p>'); ?>
 								
-								<?php 
-								// only show edit button if user has permission to edit posts
-								if( $user_level > 0 ) { 
+								<div class="row">
+									<div class="col-md-4 col-center">
+										<div class="share text-center">Share</div>
+										<div class="share-post">
+											<div class="social">
+												<ul class="list-unstyled list-inline">
+													<li>
+														<a href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>&amp;t=<?php the_title(); ?>" class="fa fa-facebook" title="Share on Facebook." target="_blank"></a>
+													</li>
+													<li>
+														<a href="http://twitter.com/home/?status=<?php the_title(); ?> - <?php the_permalink(); ?>" class="fa fa-twitter" title="Tweet this!" target="_blank"></a>
+													</li>
+													<li>
+														<a href="http://www.linkedin.com/shareArticle?mini=true&amp;title=<?php the_title(); ?>&amp;url=<?php the_permalink(); ?>" class="fa fa-linkedin" title="Share on LinkedIn" target="_blank"></a>
+													</li>
+												</ul>
+											</div><!-- /.social -->
+										</div><!-- /.share-post -->
+									</div>
+								</div><!-- /.row -->
+
+								<?php if( $user_level > 0 ) { 
 								?>
 								<a href="<?php echo get_edit_post_link(); ?>" class="btn btn-success edit-post"><i class="icon-pencil icon-white"></i> <?php _e("Edit post","wpbootstrap"); ?></a>
 								<?php } ?>
