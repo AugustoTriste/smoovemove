@@ -34,7 +34,7 @@
 			</div><!-- /.date-bar -->
 			
 			<div class="container">
-				<div id="content" class="clearfix row">
+				<div class="content clearfix row">
 			
 					<div id="main" class="col-sm-12 clearfix" role="main">
 

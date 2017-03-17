@@ -18,7 +18,7 @@
 		<div class="blog-section">
 			<div class="container">
 			
-				<div id="content" class="row posts-row">
+				<div class="content row posts-row">
 
 					<div class="col-sm-12">
 						<?php 
