@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-		<div class="blog-header bg-full parallax-header" style="background-image: url(<?php the_field('blog_bg_image', get_option('page_for_posts')); ?>);">
+		<div class="bg-full parallax-header" style="background-image: url(<?php the_field('blog_bg_image', get_option('page_for_posts')); ?>);">
 		    <div class="container-fluid">
 				<div class="row">
 					<div class="col-md-6 col-center">
