@@ -43,32 +43,49 @@
 				<div class="content row posts-row">
 
 					<div class="col-sm-12">
-						<?php $the_query = new WP_Query( 'posts_per_page=50' ); //Check the WP_Query docs to see how you can limit which posts to display ?>
-						<?php if ( $the_query->have_posts() ) : ?>
-						    <div id="isotope-list">
-						    <?php while ( $the_query->have_posts() ) : $the_query->the_post(); 
-						 $termsArray = get_the_terms( $post->ID, "category" );  //Get the terms for this particular item
-						 $termsString = ""; //initialize the string that will contain the terms
-						 foreach ( $termsArray as $term ) { // for each term 
-						 $termsString .= $term->slug.' '; //create a string that has all the slugs 
-						 }
-						 ?> 
-						 <div class="col-lg-4 col-md-6 <?php echo $termsString; ?> item">
-					    	<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">
-					    		<?php the_post_thumbnail( 'wpbs-featured' ); ?>
-					    	</a>
-					    	<p class="meta"><?php _e("", "wpbootstrap"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php echo get_the_date('jS M, Y', '','', FALSE); ?></time> <?php _e("/", "wpbootstrap"); ?> <?php the_category(', '); ?>.</p>
-					    	<h4><?php the_title(); ?></h4>
-					    </div>
-						    <?php endwhile;  ?>
-						    </div> <!-- end isotope-list -->
-						<?php endif; ?>
-					</div>
+						<div id="isotope-list">
+							<?php if (have_posts()) : while (have_posts()) : the_post();
 
+								 $termsArray = get_the_terms( $post->ID, "category" );  //Get the terms for this particular item
+								 $termsString = ""; //initialize the string that will contain the terms
+								 foreach ( $termsArray as $term ) { // for each term 
+								 	$termsString .= $term->slug.' '; //create a string that has all the slugs 
+								 }
+								 ?> 
 
+								<div class="col-lg-4 col-md-6 <?php echo $termsString; ?> item">
+							    	<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">
+							    		<?php the_post_thumbnail( 'wpbs-featured' ); ?>
+							    	</a>
+							    	<p class="meta"><?php _e("", "wpbootstrap"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php echo get_the_date('jS M, Y', '','', FALSE); ?></time> <?php _e("/", "wpbootstrap"); ?> <?php the_category(', '); ?>.</p>
+							    	<h4><?php the_title(); ?></h4>
+							    </div>
 					
+							<?php endwhile; ?>
+						</div><!-- /.isotope-list -->
+
+							 <div class="blog-nav">
+							 	<?php if (function_exists('wp_bootstrap_page_navi')) { // if expirimental feature is active ?>
+							
+								<?php wp_bootstrap_page_navi(); // use the page navi function ?>
+								
+								<?php } else { // if it is disabled, display regular wp prev & next links ?>
+									<nav class="wp-prev-next">
+										<ul class="pager">
+											<li class="previous"><?php next_posts_link(_e('&laquo; Older Entries', "wpbootstrap")) ?></li>
+											<li class="next"><?php previous_posts_link(_e('Newer Entries &raquo;', "wpbootstrap")) ?></li>
+										</ul>
+									</nav>
+								<?php } ?>		
+								
+								<?php else : ?>
+							 </div>
+
+						<?php endif; ?>
+						
+					</div><!-- /.col-sm-12 -->
 	    
-				</div> <!-- end #content -->
+				</div> <!-- end /.content -->
 
 			</div><!-- /.container -->
 		</div><!-- /.blog-section -->
