@@ -50,7 +50,7 @@
 		</div><!-- /.row -->
 		<div class="row button-row text-center">
 		    <div class="col-sm-6 col-center">
-		        <a href="<?php the_sub_field("section_4_get_app_button_url"); ?>" class="btn btn-orange" target="_blank">Get the App</a>
+		        <a href="<?php the_sub_field("section_4_get_app_button_url"); ?>" class="btn btn-orange" target="_blank"><?php echo the_sub_field("section_4_button_text"); ?></a>
 		    </div>
 		</div>
 	</div><!-- /.container -->

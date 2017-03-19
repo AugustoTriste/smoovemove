@@ -7,7 +7,7 @@
 						<h2><?php echo the_sub_field("sec_3_title"); ?></h2>
 						<p class="sub-title"><?php echo the_sub_field("sec_3_sub_title"); ?></p>
 						<div class="button-row">
-							<a href="<?php echo the_sub_field("sec_3_btn_url"); ?>" class="btn btn-orange">Get the App</a>
+							<a href="<?php echo the_sub_field("sec_3_btn_url"); ?>" class="btn btn-orange"><?php echo the_sub_field("section_3_button_text"); ?></a>
 						</div>
 					</div>
 				</div><!-- /.dis-ta -->
