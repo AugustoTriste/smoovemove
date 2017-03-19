@@ -733,6 +733,55 @@ header {
   	font-weight: 300;
   }
 }
+
+.contact-section {
+	padding: 98px 0;
+	background-color: #252525;
+	@media(max-width: @screen-xs-m) {
+		padding: 44px 0;
+	}
+	h2.title {
+		margin-bottom: 30px;
+		color: @white;
+		font-size: 50px;
+		@media(max-width: @screen-xs-m) {
+			font-size: 30px;
+		}
+	}
+	p.sub-title {
+		margin-bottom: 50px;
+		color: @white;
+		font-family: @lato;
+		font-size: 20px;
+		@media(max-width: @screen-xs-m) {
+			font-size: 14px;
+		}
+	}
+	label {
+		margin: 0 0 10px 0;
+		color: @white;
+		font-family: @lato;
+		font-weight: 300;
+	}
+	.form-control {
+		border-radius: 10px;
+		@media(min-width: @screen-xs) {
+			height: 55px;
+		}
+	}
+	.form-group {
+		margin-bottom: 35px;
+		@media(max-width: @screen-xs-m) {
+			margin-bottom: 20px;
+		}
+		&.submit-btn {
+			padding-top: 30px;
+			@media(max-width: @screen-xs-m) {
+				padding-top: 20px;
+			}
+		}
+	}
+}
 /* ---- end Page Template ---- */
 
 /* ---- Footer ---- */

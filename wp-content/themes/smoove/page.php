@@ -89,6 +89,24 @@
 				</div><!-- /.container -->
 			</div><!-- /.default-section -->
 
+			<?php elseif( get_row_layout() == 'contact_section' ): ?>
+
+			<div class="contact-section">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 col-md-8 col-center text-center">
+							<h2 class="title"><?php echo the_sub_field("title"); ?></h2>
+							<p class="sub-title"><?php echo the_sub_field("sub_title"); ?></p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<?php echo the_sub_field("contact_form"); ?>
+						</div>
+					</div>
+				</div>
+			</div>
+
 
 		    <?php endif;
 
