@@ -160,6 +160,8 @@ header {
 		}
 		a {
 			&.logo {
+				position: relative;
+				z-index: 999;
 				display: block;
 				padding-top: 5px;
 				img {
@@ -302,16 +304,6 @@ header {
 	.nav-wrap {
 		.bottom {
 			margin-top: 45px;
-		}
-	}
-	.overlay-logo {
-		position: absolute;
-		top: 26px;
-		left: -20px;
-		@media(max-width: @screen-xs-m) {
-			max-width: 130px;
-			top: 16px;
-			left: -4px;
 		}
 	}
 }

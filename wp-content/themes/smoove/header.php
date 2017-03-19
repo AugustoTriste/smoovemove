@@ -58,7 +58,6 @@
 
 				<div class="overlay">
 					<div class="wrap">
-						<img class="overlay-logo" src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="">
 						<div class="row">
 							<div class="col-sm-12">
 								<div class="nav-wrap dis-ta">
