@@ -116,7 +116,7 @@ jQuery(document).ready(function($) {
         $("body").toggleClass("down", (fromTop > 400));
     });
 
-    //Isotop
+    //Isotope
 	var $container = $('#isotope-list'); //The ID for the list with all the blog posts
 	$container.isotope({ //Isotope options, 'item' matches the class in the PHP
 		itemSelector : '.item', 
