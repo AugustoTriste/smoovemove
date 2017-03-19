@@ -101,6 +101,8 @@
 					</div> <!-- end #main -->
 	    
 				</div> <!-- end #content -->
-			</div>
+			</div><!-- /.container -->
+
+			<?php get_template_part( 'partials/random', 'posts' ); ?>
 
 <?php get_footer(); ?>
