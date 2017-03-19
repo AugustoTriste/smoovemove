@@ -660,6 +660,81 @@ header {
 }
 /* ---- end Blog Page ---- */
 
+/* ---- Page Template ---- */
+.default-section {
+	padding: 98px 0;
+	@media(max-width: @screen-xs-m) {
+		padding: 44px 0;
+	}
+	.panel {
+		background: none;
+		border: 0;
+	}
+  .panel-group {
+    @media(min-width: @screen-sm) {
+      margin-top: 40px;
+    }
+    .panel + {
+      .panel {
+        margin-top: 10px;
+      }
+    }
+  }
+  .panel-heading {
+  	padding: 0 15px;
+    background: none;
+    border-bottom: 1px solid #EAEAEA;
+    .transition(background-color .3s ease-in-out);
+    h4 {
+      font-size: 20px;
+      font-weight: 600;
+      text-align: left;
+      @media(max-width: @screen-sm-m) {
+        font-size: 17px;
+      }
+      span {
+        color: #d3046e;
+        font-weight: 600;
+      }
+    }
+  }
+  .panel-title {
+    > a {
+      display: block;
+      @media(min-width: @screen-xs) {
+      	&:after {
+	      	position: relative;
+	      	top: -20px;
+	        margin-top: -5px;
+	        padding: 9px 11px;
+	        font-family: @fa;
+	        font-size: 26px;
+	        content: "\f078"; 
+	        float: right; 
+	        .transition(all .3s ease-in-out);
+	        @media(max-width: @screen-sm-m) {
+	          padding: 7px 7px 5px;
+	          font-size: 13px;
+	        }
+	      }
+	      &.collapsed {
+	        &:after {
+	           content: "\f054";
+	        }
+	      }
+      }
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  .panel-body {
+  	font-family: @lato;
+  	font-weight: 300;
+  }
+}
+/* ---- end Page Template ---- */
+
 /* ---- Footer ---- */
 .bottom {
 	padding: 30px 0;
