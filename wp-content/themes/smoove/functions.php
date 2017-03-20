@@ -453,6 +453,9 @@ if( !function_exists("wp_bootstrap_theme_styles") ) {
         wp_register_style( 'owl-theme-css', get_template_directory_uri() . '/bower_components/owl/owl-carousel/owl.theme.css', array(), '1.0', 'all' );
         wp_enqueue_style( 'owl-theme-css' );
 
+        wp_register_style( 'wow', get_template_directory_uri() . '/bower_components/wow/css/libs/animate.css', array(), '1.0', 'all' );
+        wp_enqueue_style( 'wow' );
+
         wp_register_style( 'wpbs', get_template_directory_uri() . '/library/dist/css/styles.67741e49.min.css', array(), '1.0', 'all' );
         wp_enqueue_style( 'wpbs' );
 
@@ -483,6 +486,11 @@ if( !function_exists( "wp_bootstrap_theme_js" ) ) {
       array('jquery'), 
       '1.2' );
 
+     wp_register_script( 'wow', 
+      get_template_directory_uri() . '/bower_components/wow/dist/wow.min.js', 
+      array('jquery'), 
+      '1.2' );
+
      wp_register_script( 'isotope-js', 
       get_template_directory_uri() . '/library/js/isotope.min.js', 
       array('jquery'), 
@@ -505,6 +513,7 @@ if( !function_exists( "wp_bootstrap_theme_js" ) ) {
   
     wp_enqueue_script( 'bootstrap' );
     wp_enqueue_script( 'owl-carousel' );
+    wp_enqueue_script( 'wow' );
     wp_enqueue_script( 'isotope-js' );
     wp_enqueue_script( 'imagesloaded' );
     wp_enqueue_script( 'wpbs-js' );
