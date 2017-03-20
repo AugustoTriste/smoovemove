@@ -76,6 +76,9 @@ h2 {
 }
 p {
 	font-family: @lato;
+	&.thin {
+		font-weight: 300;
+	}
 }
 .header-text {
 	color: @white;
@@ -313,21 +316,30 @@ header {
 /* ---- end Header ---- */
 
 /* ---- Homepage ---- */
-.section-2 {
-	padding: 98px 0 50px;
+.section-images {
+	padding: 98px 0;
 	text-align: center;
 	@media(max-width: @screen-xs-m) {
-		padding: 44px 0 24px;
+		padding: 44px 0;
 	}
 	img {
 		margin-bottom: 20px;
 		@media(max-width: @screen-xs-m) {
 			margin-bottom: 10px;
 		}
+		&.round {
+			.center-block();
+			margin-bottom: 40px;
+		}
 	}
 	p {
+		font-weight: 300;
 		@media(min-width: @screen-xs) {
 			font-size: 20px;
+		}
+		&.sub-title {
+			font-size: 14px;
+			line-height: 1.5;
 		}
 		br {
 			@media(max-width: @screen-sm-m) {
@@ -335,24 +347,17 @@ header {
 			}
 		}
 	}
-}
-
-.section-2-images {
-	padding: 0 0 44px;
-	img {
-		.center-block();
-		margin-bottom: 40px;
+	.images-row {
+		margin-top: 50px;
+		@media(max-width: @screen-xs-m) {
+			margin-top: 30px;
+		}
 	}
-	p {
-		font-weight: 300;
-		line-height: 1.5;
-	}
-}
-
-.sec-2-button {
-	padding: 0 0 98px;
-	@media(max-width: @screen-xs-m) {
-		padding: 0 0 44px;
+	.button-row {
+		margin-top: 50px;
+		@media(max-width: @screen-xs-m) {
+			margin-top: 30px;
+		}
 	}
 }
 

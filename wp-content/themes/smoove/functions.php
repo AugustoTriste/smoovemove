@@ -456,7 +456,7 @@ if( !function_exists("wp_bootstrap_theme_styles") ) {
         wp_register_style( 'wow', get_template_directory_uri() . '/bower_components/wow/css/libs/animate.css', array(), '1.0', 'all' );
         wp_enqueue_style( 'wow' );
 
-        wp_register_style( 'wpbs', get_template_directory_uri() . '/library/dist/css/styles.35e33614.min.css', array(), '1.0', 'all' );
+        wp_register_style( 'wpbs', get_template_directory_uri() . '/library/dist/css/styles.4a06f89a.min.css', array(), '1.0', 'all' );
         wp_enqueue_style( 'wpbs' );
 
         // For child themes
