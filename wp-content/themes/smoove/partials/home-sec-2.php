@@ -1,8 +1,8 @@
 <div class="section-images">
     <div class="container">
 		<div class="row wow fadeInUp" data-wow-duration="1s" data-wow-delay="750ms">
-			<div class="col-sm-12 wow">
-				<img src="<?php echo the_sub_field("section_2_logo"); ?>" alt="">
+			<div class="col-md-6 col-center wow">
+				<img src="<?php echo the_sub_field("section_2_logo"); ?>" alt="Smoovemove">
 				<h2><?php echo the_sub_field("sec_2_title"); ?></h2>
 				<p><?php echo the_sub_field("sec_2_sub_title"); ?></p>
 			</div>
@@ -22,7 +22,7 @@
 	                    <?php
 	                    endif;
 	                    ?>
-	                        <p class="sub-title text-center thin"><?php the_sub_field("text"); ?></p>                        
+	                        <p class="sub-title text-center"><?php the_sub_field("text"); ?></p>                        
 	                </div>  
         		</div>             
         <?php
