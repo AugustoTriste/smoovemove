@@ -55,7 +55,7 @@
 
 								<div class="col-lg-4 col-md-6 <?php echo $termsString; ?> item">
 							    	<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">
-							    		<?php the_post_thumbnail( 'wpbs-featured' ); ?>
+							    		<?php the_post_thumbnail( 'blog-list' ); ?>
 							    	</a>
 							    	<p class="meta"><?php _e("", "wpbootstrap"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php echo get_the_date('jS M, Y', '','', FALSE); ?></time> <?php _e("/", "wpbootstrap"); ?> <?php the_category(', '); ?>.</p>
 							    	<h4><?php the_title(); ?></h4>

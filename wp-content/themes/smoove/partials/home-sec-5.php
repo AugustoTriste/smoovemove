@@ -19,7 +19,7 @@
 			    <div class="col-sm-4">
 			    	<div class="img-wrap">
 			    		<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">
-				    		<?php the_post_thumbnail( 'wpbs-featured' ); ?>
+				    		<?php the_post_thumbnail( 'blog-list' ); ?>
 				    	</a>
 			    	</div>
 			    	<p class="meta"><?php _e("", "wpbootstrap"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php echo get_the_date('jS M, Y', '','', FALSE); ?></time> <?php _e("/", "wpbootstrap"); ?> <?php the_category(', '); ?>.</p>

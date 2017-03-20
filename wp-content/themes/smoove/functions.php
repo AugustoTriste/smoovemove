@@ -134,6 +134,7 @@ if ( ! isset( $content_width ) ) $content_width = 580;
 
 // Thumbnail sizes
 add_image_size( 'wpbs-featured', 1280, 872, true );
+add_image_size( 'blog-list', 735, 500, true );
 
 /* 
 to add more sizes, simply copy a line from above 
