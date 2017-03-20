@@ -1,6 +1,6 @@
 <div class="section-6" style="background-image: url(<?php echo the_sub_field("sec_6_bg_image"); ?>);">
     <div class="container">
-		<div class="row text-center">
+		<div class="row text-center wow fadeIn" data-wow-duration="1s" data-wow-delay="750ms">
 			<div class="col-sm-6">
 				<img src="<?php echo the_sub_field("sec_6_logo"); ?>" class="mini-logo">
 				<h2><?php echo the_sub_field("sec_6_title"); ?></h2>

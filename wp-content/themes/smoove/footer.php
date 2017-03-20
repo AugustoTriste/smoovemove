@@ -32,6 +32,14 @@
 		
 		<?php wp_footer(); // js scripts are inserted using this function ?>
 
+
+		<script src="//localhost:35729/livereload.js"></script>
+
+
+		<script>
+			new WOW().init();
+		</script>
+
 	</body>
 
 </html>

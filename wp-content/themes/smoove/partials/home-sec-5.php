@@ -1,5 +1,5 @@
 <div class="section-5 blog-section">
-    <div class="container">
+    <div class="container wow fadeInUp" data-wow-duration="1s" data-wow-delay="750ms">
 		<div class="row text-center">
 			<div class="col-sm-8 col-center">
 				<h2><?php echo the_sub_field("sec_5_title"); ?></h2>

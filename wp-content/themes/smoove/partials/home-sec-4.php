@@ -1,5 +1,5 @@
 <div class="section-4">
-    <div class="container">
+    <div class="container wow fadeInUp" data-wow-duration="1s" data-wow-delay="750ms">
 		<div class="row">
 			<div class="col-sm-8 col-center text-center">
 				<div class="main-text">

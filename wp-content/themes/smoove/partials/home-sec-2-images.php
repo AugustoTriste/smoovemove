@@ -1,4 +1,4 @@
-<div class="section-2-images">
+<div class="section-2-images wow fadeInUp" data-wow-duration="1s" data-wow-delay="750ms">
     <div class="container">
     	<div class="row hidden-xs">
 		 <?php
