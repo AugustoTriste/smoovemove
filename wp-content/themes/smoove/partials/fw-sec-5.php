@@ -6,7 +6,7 @@
 	                while(have_rows("testimonial_item")): the_row();              
 	        ?>
 				<div>
-					<div class="col-sm-8 col-center text-center">
+					<div class="col-sm-8 col-center text-center wow fadeInUp" data-wow-duration="1s">
 						<img class="quotes quote-up" src="<?php bloginfo('template_directory'); ?>/images/quotes_up.png">
 						<p class="testimonial"><?php echo the_sub_field("testimonial"); ?></p>
 						<img class="quotes quote-down" src="<?php bloginfo('template_directory'); ?>/images/quotes_down.png">
