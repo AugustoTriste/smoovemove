@@ -1,11 +1,11 @@
 <?php get_header(); ?>
 
-		<div class="bg-full parallax-header" style="background-image: url(<?php the_field('blog_bg_image', get_option('page_for_posts')); ?>);">
+		<div class="bg-full parallax-header wow fadeIn" style="background-image: url(<?php the_field('blog_bg_image', get_option('page_for_posts')); ?>);">
 		    <div class="container-fluid">
 				<div class="row">
 					<div class="col-md-6 col-center">
 						<div class="dis-ta header-text parallax-text">
-							<div class="text-container dis-cell text-center align-middle">
+							<div class="text-container dis-cell text-center align-middle wow fadeInUp" data-wow-delay="750ms" data-wow-duration="1500ms">
 								<h2><?php the_field('blog_title', get_option('page_for_posts')); ?></h2>
 								<h3><?php the_field('blog_sub_title', get_option('page_for_posts')); ?></h3>
 							</div>
@@ -43,7 +43,7 @@
 				<div class="content row posts-row">
 
 					<div class="col-sm-12">
-						<div id="isotope-list">
+						<div id="isotope-list" class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="750ms">
 							<?php if (have_posts()) : while (have_posts()) : the_post();
 
 								 $termsArray = get_the_terms( $post->ID, "category" );  //Get the terms for this particular item
