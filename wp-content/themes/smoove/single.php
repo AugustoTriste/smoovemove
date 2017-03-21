@@ -22,10 +22,10 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-6">
-							<p class="meta wow fadeIn"><?php _e("", "wpbootstrap"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php echo get_the_date('jS F, Y', '','', FALSE); ?></time> <?php _e("", "wpbootstrap"); ?> </p>
+							<p class="meta wow fadeIn" data-wow-duration="1s" data-wow-delay="750ms"><?php _e("", "wpbootstrap"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php echo get_the_date('jS F, Y', '','', FALSE); ?></time> <?php _e("", "wpbootstrap"); ?> </p>
 						</div>
 						<div class="col-xs-6">
-							<div class="cat text-right wow fadeIn">
+							<div class="cat text-right wow fadeIn" data-wow-duration="1s" data-wow-delay="750ms">
 								<a href="#share">Share</a>
 							</div>
 						</div>
