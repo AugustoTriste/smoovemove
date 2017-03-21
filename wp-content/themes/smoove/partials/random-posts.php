@@ -1,4 +1,4 @@
-<div class="blog-section random-posts">
+<div class="blog-section random-posts wow fadeInUp" data-wow-duration="1s" data-wow-delay="750ms">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">

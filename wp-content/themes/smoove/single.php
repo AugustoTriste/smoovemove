@@ -2,14 +2,14 @@
 			
 			<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
 
-			<div class="blog-header bg-full parallax-header" style="background-image: url('<?php echo $thumb['0'];?>');">
+			<div class="blog-header bg-full parallax-header wow fadeIn" style="background-image: url('<?php echo $thumb['0'];?>');">
 			    <div class="tinted-bg">
 			    	<div class="container-fluid">
 						<div class="row">
 							<div class="col-lg-6 col-md-8">
 								<div class="dis-ta header-text parallax-text">
 									<div class="text-container dis-cell text-center align-bottom">
-										<h2 itemprop="headline" class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="300ms"><?php the_title(); ?></h2>
+										<h2 itemprop="headline" class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="750ms"><?php the_title(); ?></h2>
 									</div>
 								</div>
 							</div><!-- /.row -->
@@ -22,10 +22,10 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-6">
-							<p class="meta"><?php _e("", "wpbootstrap"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php echo get_the_date('jS F, Y', '','', FALSE); ?></time> <?php _e("", "wpbootstrap"); ?> </p>
+							<p class="meta wow fadeIn"><?php _e("", "wpbootstrap"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php echo get_the_date('jS F, Y', '','', FALSE); ?></time> <?php _e("", "wpbootstrap"); ?> </p>
 						</div>
 						<div class="col-xs-6">
-							<div class="cat text-right">
+							<div class="cat text-right wow fadeIn">
 								<a href="#share">Share</a>
 							</div>
 						</div>
@@ -42,7 +42,7 @@
 						
 						<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 						
-							<section class="post_content clearfix" itemprop="articleBody">
+							<section class="post_content clearfix wow fadeInUp" data-wow-duration="1s" data-wow-delay="750ms" itemprop="articleBody">
 								<?php the_content(); ?>
 								
 								<?php wp_link_pages(); ?>
@@ -51,7 +51,7 @@
 							
 							<footer>
 								
-								<div class="row">
+								<div class="row wow fadeInUp" data-wow-duration="1s" data-wow-delay="750ms">
 									<div class="col-md-4 col-center">
 										<div class="share text-center">Share</div>
 										<div class="share-post">

@@ -103,6 +103,7 @@ jQuery(document).ready(function($) {
 	    open = false;
 	});
 
+    // Paralax
 	function scrollBanner() {
 	  $(document).scroll(function(){
 	  	var scrollPos = $(this).scrollTop();
