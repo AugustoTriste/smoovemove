@@ -8,11 +8,11 @@
 
 			        if( get_row_layout() == 'header_content' ): ?>
 
-		    <div class="section-1 bg-full parallax-header" style="background-image: url(<?php echo the_sub_field('header_background_image'); ?>);">
+		    <div class="section-1 bg-full parallax-header wow fadeIn" style="background-image: url(<?php echo the_sub_field('header_background_image'); ?>);">
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-md-6 col-center">
-							<div class="dis-ta header-text parallax-text">
+							<div class="dis-ta header-text parallax-text wow fadeInUp" data-wow-delay="750ms" data-wow-duration="1500ms">
 								<div class="text-container dis-cell text-center align-middle">
 									<h2 itemprop="headline"><?php the_title(); ?></h2>
 									<h3><?php echo the_sub_field('sub_title'); ?></h3>
@@ -32,7 +32,7 @@
 						
 						<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 						
-							<section class="post_content clearfix" itemprop="articleBody">
+							<section class="post_content clearfix wow fadeInUp" data-wow-delay="750ms" data-wow-duration="1500ms" itemprop="articleBody">
 								<?php the_content(); ?>
 						
 							</section> <!-- end article section -->
@@ -61,7 +61,7 @@
         	<div class="section-3 bg-full" style="background-image: url(<?php echo the_sub_field("background_image"); ?>);">
 			    <div class="container">
 					<div class="row">
-						<div class="col-sm-8 col-center text-center">
+						<div class="col-sm-8 col-center text-center wow fadeInUp" data-wow-delay="750ms" data-wow-duration="1500ms">
 							<div class="dis-ta">
 								<div class="inner-container dis-cell align-middle">
 									<h2><?php echo the_sub_field("title"); ?></h2>
@@ -82,7 +82,7 @@
 			<div class="default-section">
 				<div class="container">
 					<div class="row">
-						<div class="col-sm-12">
+						<div class="col-sm-12 wow fadeInUp" data-wow-delay="750ms" data-wow-duration="1500ms">
 							<?php echo the_sub_field("collapsible"); ?>
 						</div>
 					</div><!-- /.row -->
@@ -94,13 +94,13 @@
 			<div class="contact-section">
 				<div class="container">
 					<div class="row">
-						<div class="col-lg-6 col-md-8 col-center text-center">
+						<div class="col-lg-6 col-md-8 col-center text-center wow fadeInUp" data-wow-delay="750ms" data-wow-duration="1500ms">
 							<h2 class="title"><?php echo the_sub_field("title"); ?></h2>
 							<p class="sub-title"><?php echo the_sub_field("sub_title"); ?></p>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-sm-12">
+						<div class="col-sm-12 wow fadeInUp" data-wow-delay="750ms" data-wow-duration="1500ms">
 							<?php echo the_sub_field("contact_form"); ?>
 						</div>
 					</div>
