@@ -35,7 +35,7 @@
 		</div><!-- /.row.posts-row -->
 		<div class="row button-row text-center">
 		    <div class="col-sm-6 col-center">
-		        <a href="/blog" class="btn btn-orange">View all articles</a>
+		        <a href="/moving-guides" class="btn btn-orange">View all articles</a>
 		    </div>
 		</div><!-- /.row.button-row -->
 	</div><!-- /.container -->
