@@ -9,7 +9,7 @@
 							<div class="col-lg-6 col-md-8">
 								<div class="dis-ta header-text parallax-text">
 									<div class="text-container dis-cell text-center align-bottom">
-										<h2 itemprop="headline"><?php the_title(); ?></h2>
+										<h2 itemprop="headline" class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="300ms"><?php the_title(); ?></h2>
 									</div>
 								</div>
 							</div><!-- /.row -->

@@ -3,7 +3,7 @@
 		<div class="row">
 			<div class="col-md-6 col-center">
 				<div class="dis-ta header-text parallax-text">
-					<div class="text-container dis-cell text-center align-middle wow fadeInUp" data-delay="500ms" data-wow-duration="1500ms">
+					<div class="text-container dis-cell text-center align-middle wow fadeInUp" data-wow-delay="750ms" data-wow-duration="1500ms">
 						<h2><?php echo the_sub_field("title"); ?></h2>
 						<h3><?php echo the_sub_field("sub_title"); ?></h3>
 					</div>
