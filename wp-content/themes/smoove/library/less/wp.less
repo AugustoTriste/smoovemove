@@ -477,12 +477,22 @@ header {
 }
 
 .blog-section {
+	.img-wrap {
+		overflow: hidden;
+		&:hover {
+			img {
+				.scale(1.2);
+			}
+		}
+		img {
+			.transition(all .3s ease);
+		}
+	}
 	.posts-row {
 		margin-top: 50px;
 		img {
 			width: 100%;
 			.center-block();
-			margin-bottom: 20px;
 		}
 	}
 	.button-row {
@@ -493,6 +503,7 @@ header {
 	}
 	p {
 		&.meta {
+			margin-top: 20px;
 			margin-bottom: 5px;
 			color: #666;
 			a {
@@ -630,9 +641,6 @@ header {
 		.posts-row {
 			margin-top: 0;
 			margin-bottom: 30px;
-			img {
-				margin-bottom: 5px;
-			}
 		}
 		.elm-button {
 			padding: 10px 40px;
