@@ -19,6 +19,8 @@ Template Name: Full Width Page
                 	include("partials/fw-sec-4.php");
                 elseif(get_row_layout() == "section_5"):
                 	include("partials/fw-sec-5.php");
+                elseif(get_row_layout() == "section_6"):
+                	include("partials/fw-sec-6.php");
 
 	            endif;
 	        endwhile;
