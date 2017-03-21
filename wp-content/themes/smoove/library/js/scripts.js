@@ -74,11 +74,21 @@ jQuery(document).ready(function($) {
 	$('.dropdown-toggle').dropdown();
 
 	//Slider
-  	$('.owl-carousel').owlCarousel({
-          loop:true,
-          responsiveClass:true,
-          items:1,
-          dots: true
+  	$('.owl-3-images').owlCarousel({
+		loop:true,
+		responsiveClass:true,
+		items:1,
+		singleItem: true,
+		dots: true
+    });
+
+    $('.owl-testimonials').owlCarousel({
+		loop:true,
+		responsiveClass:true,
+		items:1,
+		singleItem: true,
+		autoPlay: 3000,
+		dots: true
     });
 
     // Overlay menu

@@ -316,6 +316,12 @@ header {
 /* ---- end Header ---- */
 
 /* ---- Homepage ---- */
+.section {
+	padding: 98px 0;
+	@media(max-width: @screen-xs-m) {
+		padding: 44px 0;
+	}
+}
 .section-images {
 	padding: 98px 0;
 	text-align: center;
@@ -525,6 +531,43 @@ header {
 			.center-block();
 			@media(max-width: @screen-xs-m) {
 				max-width: 175px;
+			}
+		}
+	}
+}
+
+.testimonial-section {
+	padding: 130px 0;
+	background-color: #F0F0F0;
+	@media(max-width: @screen-sm-m) {
+		padding: 44px 0;
+	}
+	p {
+		&.testimonial {
+			color: #005931;
+			font-family: @font-family-base;
+			font-size: 30px;
+			@media(max-width: @screen-sm-m) {
+				font-size: 22px;
+			}
+			@media(max-width: @screen-xs-m) {
+				font-size: 16px;
+			}
+		}
+		&.name {
+			padding-top: 10px;
+			color: #666666;
+			font-weight: 300;
+		}
+	}
+	img {
+		&.quotes {
+			margin: 25px 0;
+			@media(max-width: @screen-sm-m) {
+				max-width: 52px;
+			}
+			@media(max-width: @screen-xs-m) {
+				max-width: 40px;
 			}
 		}
 	}
