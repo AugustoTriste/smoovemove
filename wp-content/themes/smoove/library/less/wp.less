@@ -38,10 +38,11 @@
 	font-size: 16px;
 	font-weight: 600;
 	text-transform: uppercase;
-	.transition(background-color .3s ease-in-out);
+	.transition(all .3s ease-in-out);
 	&:hover {
 		color: @white;
 		background-color: darken(@orange, 10%);
+		.scale(0.95);
 	}
 }
 .col-center {
@@ -485,7 +486,7 @@ header {
 			}
 		}
 		img {
-			.transition(all .3s ease-in-out);
+			.transition(all .4s ease-in-out);
 		}
 	}
 	.posts-row {
