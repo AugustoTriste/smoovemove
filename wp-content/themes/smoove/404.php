@@ -3,7 +3,7 @@
 <div class="bg-full sectio-404">
     <div class="container">
 		<div class="row">
-			<div class="col-sm-8 col-center text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="750ms">
+			<div class="col-sm-8 col-center text-center wow fadeInUp" data-wow-duration="1s">
 				<div class="dis-ta">
 					<div class="inner-container dis-cell align-middle">
 						<h2><i class="fa fa-meh-o"></i></h2>
