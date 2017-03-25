@@ -49,6 +49,17 @@
 	float: none;
 	margin: 0 auto;
 }
+.hidden-mb {
+	@media(max-width: @screen-xs-m) {
+		display: none !important;
+	}
+}
+.visible-mb {
+	display: none;
+	@media(max-width: @screen-xs-m) {
+		display: block !important;
+	}
+}
 /* ---- end Helper Classes ---- */
 
 /* ---- Global ---- */

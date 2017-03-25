@@ -130,6 +130,13 @@ jQuery(document).ready(function($) {
     //Isotope
 	var $container = $('#isotope-list'); //The ID for the list with all the blog posts
 
+	//Mobile filter
+	$('#filter-select').change( function() {
+		$container.isotope({
+		  filter: this.value
+		});
+	});
+
 	imagesLoaded($container, function(){
 		$container.isotope({ //Isotope options, 'item' matches the class in the PHP
 			itemSelector : '.item', 
@@ -153,6 +160,8 @@ jQuery(document).ready(function($) {
 		//When an item is clicked, sort the items.
 		var selector = $(this).attr('data-filter');
 		$container.isotope({ filter: selector });
+
+
 
 		return false;
 		});

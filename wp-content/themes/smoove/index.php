@@ -19,7 +19,7 @@
 			<div class="container">
 				<div class="col-sm-12">
 					<div class="cat-wrap">
-						<ul id="filters" class="list-unstyled list-inline">
+						<ul id="filters" class="list-unstyled list-inline hidden-xs">
 						    <li><a href="#" data-filter="*" class="selected">All</a></li>
 							<?php 
 							 $terms = get_terms("category"); // get all categories, but you can use any taxonomy
@@ -32,6 +32,20 @@
 							 } 
 							?>
 						</ul>
+						<div class="mobile-filter visible-xs">
+							<?php
+								$terms = get_terms("category");
+								 $count = count($terms);
+								 if ( $count > 0 ){
+								     echo "<select id='filter-select' class='form-control'>";
+								echo "<option value='*' data-filter-value='' class='selected'>All items</option>";
+								     foreach ( $terms as $term ) {
+								         echo "<option value='.{$term->slug}'>" . $term->name . "</option>";
+								     }
+								     echo "</select>";
+								 }
+							?>
+						</div>
 					</div>
 				</div>
 			</div>
