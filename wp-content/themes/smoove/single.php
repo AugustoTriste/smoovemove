@@ -8,8 +8,9 @@
 						<div class="row">
 							<div class="col-lg-7 col-md-8 col-md-offset-1">
 								<div class="dis-ta header-text parallax-text">
-									<div class="text-container dis-cell text-center align-bottom">
-										<h2 itemprop="headline" class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="750ms"><?php the_title(); ?></h2>
+									<div class="text-container dis-cell text-center align-bottom wow fadeInUp" data-wow-duration="1s" data-wow-delay="750ms">
+										<p class="cat-title text-left"><?php _e("", "wpbootstrap"); ?> <?php the_category(', '); ?></p>
+										<h2 itemprop="headline"><?php the_title(); ?></h2>
 									</div>
 								</div>
 							</div><!-- /.row -->
