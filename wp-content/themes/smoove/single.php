@@ -2,7 +2,7 @@
 			
 			<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
 
-			<div class="blog-header bg-full parallax-header wow fadeIn" style="background-image: url('<?php echo $thumb['0'];?>');">
+			<div class="top-section blog-header bg-full parallax-header wow fadeIn" style="background-image: url('<?php echo $thumb['0'];?>');">
 			    <div class="tinted-bg">
 			    	<div class="container-fluid">
 						<div class="row">

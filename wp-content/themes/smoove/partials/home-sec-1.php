@@ -1,4 +1,4 @@
-<div class="section-1 bg-full parallax-header wow fadeIn" style="background-image: url(<?php echo the_sub_field("background_image_1"); ?>);">
+<div class="top-section section-1 bg-full parallax-header wow fadeIn" style="background-image: url(<?php echo the_sub_field("background_image_1"); ?>);">
     <div class="container-fluid">
 		<div class="row">
 			<div class="col-md-6 col-center">

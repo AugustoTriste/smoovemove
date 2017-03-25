@@ -8,7 +8,7 @@
 
 			        if( get_row_layout() == 'header_content' ): ?>
 
-		    <div class="section-1 bg-full parallax-header wow fadeIn" style="background-image: url(<?php echo the_sub_field('header_background_image'); ?>);">
+		    <div class="top-section section-1 bg-full parallax-header wow fadeIn" style="background-image: url(<?php echo the_sub_field('header_background_image'); ?>);">
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-md-6 col-center">
