@@ -257,6 +257,8 @@ header {
 }
 
 /*styling open close button*/
+
+
 .button {
 	display:inline;
 	position:absolute;
@@ -998,7 +1000,13 @@ header {
 					margin: 10px 0 0 -60px;
 				}
 				li{
-					margin-left: 15px;
+					margin-left: 30px;
+					font-family: @lato;
+					@media(max-width: @screen-lg-m) {
+						margin: 0;
+						padding-left: 5px;
+						padding-right: 5px;
+					}
 					@media(max-width: @screen-xs-m) {
 						float: none;
 					}
