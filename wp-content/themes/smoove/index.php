@@ -37,8 +37,8 @@
 								$terms = get_terms("category");
 								 $count = count($terms);
 								 if ( $count > 0 ){
-								     echo "<select id='filter-select' class='form-control'>";
-								echo "<option value='*' data-filter-value='' class='selected'>All items</option>";
+								     echo "<select id='filter-select' class='selectpicker'>";
+								echo "<option value='*' data-filter-value='' class='selected'>All</option>";
 								     foreach ( $terms as $term ) {
 								         echo "<option value='.{$term->slug}'>" . $term->name . "</option>";
 								     }
