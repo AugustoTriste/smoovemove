@@ -183,7 +183,7 @@ function wp_bootstrap_register_sidebars() {
   register_sidebar(array(
     'id' => 'footer1',
     'name' => 'Footer 1',
-    'before_widget' => '<div id="%1$s" class="widget col-lg-4 %2$s">',
+    'before_widget' => '<div id="%1$s" class="widget col-lg-5 %2$s">',
     'after_widget' => '</div>',
     'before_title' => '<h4 class="widgettitle">',
     'after_title' => '</h4>',
@@ -192,7 +192,7 @@ function wp_bootstrap_register_sidebars() {
   register_sidebar(array(
     'id' => 'footer2',
     'name' => 'Footer 2',
-    'before_widget' => '<div id="%1$s" class="widget col-lg-4 %2$s">',
+    'before_widget' => '<div id="%1$s" class="widget col-lg-2 %2$s">',
     'after_widget' => '</div>',
     'before_title' => '<h4 class="widgettitle">',
     'after_title' => '</h4>',
@@ -201,7 +201,7 @@ function wp_bootstrap_register_sidebars() {
   register_sidebar(array(
     'id' => 'footer3',
     'name' => 'Footer 3',
-    'before_widget' => '<div id="%1$s" class="widget col-lg-4 %2$s">',
+    'before_widget' => '<div id="%1$s" class="widget col-lg-5 %2$s">',
     'after_widget' => '</div>',
     'before_title' => '<h4 class="widgettitle">',
     'after_title' => '</h4>',
@@ -456,7 +456,7 @@ if( !function_exists("wp_bootstrap_theme_styles") ) {
         wp_register_style( 'wow', get_template_directory_uri() . '/bower_components/wow/css/libs/animate.css', array(), '1.0', 'all' );
         wp_enqueue_style( 'wow' );
 
-        wp_register_style( 'wpbs', get_template_directory_uri() . '/library/dist/css/styles.2827a007.min.css', array(), '1.0', 'all' );
+        wp_register_style( 'wpbs', get_template_directory_uri() . '/library/dist/css/styles.836a040d.min.css', array(), '1.0', 'all' );
         wp_enqueue_style( 'wpbs' );
 
         // For child themes
@@ -502,7 +502,7 @@ if( !function_exists( "wp_bootstrap_theme_js" ) ) {
       '1.2' );
 
     wp_register_script( 'wpbs-js', 
-      get_template_directory_uri() . '/library/dist/js/scripts.f54e30bd.min.js',
+      get_template_directory_uri() . '/library/dist/js/scripts.c045d84b.min.js',
       array('bootstrap'), 
       '1.2' );
   

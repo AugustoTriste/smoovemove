@@ -31,7 +31,7 @@
         ?>
         </div><!-- /.row -->
 		
-		<div class="row images-row visible-xs owl-carousel owl-theme owl-3-images wow fadeInUp" data-wow-duration="1s" data-wow-delay="750ms">
+		<div class="images-row visible-xs owl-carousel owl-theme owl-3-images wow fadeInUp" data-wow-duration="1s" data-wow-delay="750ms">
 		 <?php
             if(have_rows("images_row")):
                 while(have_rows("images_row")): the_row();

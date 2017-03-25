@@ -6,7 +6,7 @@
 			    <div class="tinted-bg">
 			    	<div class="container-fluid">
 						<div class="row">
-							<div class="col-lg-6 col-md-8">
+							<div class="col-lg-7 col-md-8 col-md-offset-1">
 								<div class="dis-ta header-text parallax-text">
 									<div class="text-container dis-cell text-center align-bottom">
 										<h2 itemprop="headline" class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="750ms"><?php the_title(); ?></h2>
@@ -19,15 +19,19 @@
 			</div><!-- /.blog-header -->
 
 			<div class="date-bar">
-				<div class="container">
+				<div class="container-fluid">
 					<div class="row">
-						<div class="col-xs-6">
-							<p class="meta wow fadeIn" data-wow-duration="1s" data-wow-delay="750ms"><?php _e("", "wpbootstrap"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php echo get_the_date('jS F, Y', '','', FALSE); ?></time> <?php _e("", "wpbootstrap"); ?> </p>
-						</div>
-						<div class="col-xs-6">
-							<div class="cat text-right wow fadeIn" data-wow-duration="1s" data-wow-delay="750ms">
-								<a href="#share">Share</a>
-							</div>
+						<div class="col-md-10 col-md-offset-1">
+							<div class="row">
+								<div class="col-xs-6">
+									<p class="meta wow fadeIn" data-wow-duration="1s" data-wow-delay="750ms"><?php _e("", "wpbootstrap"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php echo get_the_date('jS F, Y', '','', FALSE); ?></time> <?php _e("", "wpbootstrap"); ?> </p>
+								</div>
+								<div class="col-xs-6">
+									<div class="cat text-right wow fadeIn" data-wow-duration="1s" data-wow-delay="750ms">
+										<?php _e("", "wpbootstrap"); ?> <?php the_category(', '); ?>
+									</div>
+								</div>
+							</div><!-- /.row -->
 						</div>
 					</div><!-- /.row -->
 				</div><!-- /.container -->
@@ -36,7 +40,7 @@
 			<div class="container">
 				<div class="content clearfix row">
 			
-					<div id="main" class="col-sm-12 clearfix" role="main">
+					<div id="main" class="col-md-10 col-center clearfix" role="main">
 
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 						
@@ -52,7 +56,7 @@
 							<footer>
 								
 								<div class="row wow fadeInUp" data-wow-duration="1s" data-wow-delay="750ms">
-									<div class="col-md-4 col-center">
+									<div class="col-md-5 col-center">
 										<div class="share text-center">Share</div>
 										<div class="share-post">
 											<div class="social">

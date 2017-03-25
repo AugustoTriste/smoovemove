@@ -26,7 +26,7 @@
 			<div class="container">
 				<div class="content clearfix row">
 			
-					<div id="main" class="col-sm-12 clearfix" role="main">
+					<div id="main" class="col-sm-10 col-center clearfix" role="main">
 
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 						
@@ -82,7 +82,7 @@
 			<div class="default-section">
 				<div class="container">
 					<div class="row">
-						<div class="col-sm-12 wow fadeInUp" data-wow-delay="750ms" data-wow-duration="1500ms">
+						<div class="col-sm-10 col-center wow fadeInUp" data-wow-delay="750ms" data-wow-duration="1500ms">
 							<?php echo the_sub_field("collapsible"); ?>
 						</div>
 					</div><!-- /.row -->

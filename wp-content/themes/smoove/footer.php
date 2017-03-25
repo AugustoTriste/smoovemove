@@ -10,7 +10,7 @@
 		            <?php endif; ?>
 		            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer2') ) : ?>
 		            <?php endif; ?>
-		            <div class="col-lg-4">
+		            <div class="col-lg-5">
 		            	<nav class="clearfix">
 							<?php wp_bootstrap_footer_links(); // Adjust using Menus in Wordpress Admin ?>
 						</nav>

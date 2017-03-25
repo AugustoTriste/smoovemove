@@ -1,6 +1,6 @@
 <div class="section testimonial-section">
 	<div class="container">
-		<div class="row owl-carousel owl-theme owl-testimonials">
+		<div class="owl-carousel owl-theme owl-testimonials">
 			<?php
 	            if(have_rows("testimonial_item")):
 	                while(have_rows("testimonial_item")): the_row();              

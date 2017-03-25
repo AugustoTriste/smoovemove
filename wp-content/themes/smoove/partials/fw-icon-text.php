@@ -35,7 +35,7 @@
 					                    endif;
 					                    ?>
 					                        <div class="text dis-cell">
-					                        	<p class="sub-title text-center"><?php the_sub_field("text"); ?></p> 
+					                        	<p class="text-center"><?php the_sub_field("text"); ?></p> 
 					                        </div>  
 			        				</div>                     
 				                </div>             

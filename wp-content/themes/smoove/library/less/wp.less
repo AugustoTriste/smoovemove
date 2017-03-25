@@ -52,13 +52,18 @@
 /* ---- end Helper Classes ---- */
 
 /* ---- Global ---- */
+body {
+	font-size: 16px;
+}
 .bg-full {
 	position: relative;
 	width: 100%;
 	height: 100vh;
   overflow: hidden;
-  background-size: cover;
+  background-position: center center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   .tinted-bg {
   	width:100%;
 	  height:100%;
@@ -76,8 +81,10 @@ h2 {
 	}
 }
 p {
+	color: #666;
 	font-family: @lato;
 	font-size: 16px;
+	line-height: 1.5;
 	&.thin {
 		font-weight: 300;
 	}
@@ -86,6 +93,7 @@ p {
 	color: @white;
   h2 {
   	font-size: 79px;
+  	line-height: 1;
   	font-weight: 600;
   	text-transform: uppercase;
   	@media(max-width: @screen-sm-m) {
@@ -98,7 +106,7 @@ p {
   h3 {
   	font-family: @lato;
   	font-size: 24px;
-  	line-height: 1.5;
+  	line-height: 1.4;
   	br {
   		display: none;
   	}
@@ -130,10 +138,8 @@ p {
 			font-size: 16px;
 		}
 		&.lead {
-			@media (min-width: @screen-sm-min) {
-		    font-size: (@font-size-base * 1.4);
-		    font-weight: 700;
-		  }
+			font-size: 18px;
+		  font-weight: 700;
 		}
 	}
 }
@@ -273,11 +279,7 @@ header {
 	-moz-transition:all .2s linear 0s;
 	-webkit-transition:all .2s linear 0s;
 	-o-transition:all .2s linear 0s;
-	&:hover {
-		&:after {
-			color: @orange;
-		}
-	}
+	-webkit-text-stroke: 2px rgba(19,97,61,0.9);
 }
 .btn-close {
 	&:after {
@@ -288,11 +290,7 @@ header {
 		-moz-transition:all .2s linear 0s;
 		-webkit-transition:all .2s linear 0s;
 		-o-transition:all .2s linear 0s;
-	}
-	&:hover {
-		&:after {
-			color: @orange;
-		}
+		-webkit-text-stroke: 2px rgba(19,97,61,0.9);
 	}
 }
 /*overlay*/
@@ -305,9 +303,9 @@ header {
 	background: #13613D;
 	overflow:auto;
 	z-index:99;
-	margin-left: -40px;
+	margin-left: -41px;
 	@media(max-width: @screen-xs-m) {
-		margin-left: -15px;
+		margin-left: -11px;
 	}
 }
 .wrap {
@@ -350,12 +348,12 @@ header {
 		}
 	}
 	p {
-		font-weight: 300;
+		font-weight: 500;
 		@media(min-width: @screen-xs) {
 			font-size: 20px;
 		}
 		&.sub-title {
-			line-height: 1.5;
+			font-weight: 300;
 		}
 		br {
 			@media(max-width: @screen-sm-m) {
@@ -397,6 +395,7 @@ header {
 		}
 	}
 	p {
+		color: @white;
 		font-weight: 300;
 		@media(min-width: @screen-xs) {
 			font-size: 20px;
@@ -430,13 +429,19 @@ header {
 			margin-bottom: 20px;
 		}
 	}
+	h2 {
+		color: @dark-grey;
+	}
 	p {
-		@media(min-width: @screen-xs) {
-			font-size: 20px;
-		}
-		br {
-			@media(max-width: @screen-sm-m) {
-				display: none;
+		&.sub-title {
+			font-weight: 600;
+			@media(min-width: @screen-xs) {
+				font-size: 20px;
+			}
+			br {
+				@media(max-width: @screen-sm-m) {
+					display: none;
+				}
 			}
 		}
 	}
@@ -464,10 +469,9 @@ header {
 		}
 		.text {
 			padding-left: 20px;
-		}
-		p {
-			font-size: 14px;
-			text-align: left;
+			p {
+				text-align: left;
+			}
 		}
 	}
 	.button-row {
@@ -520,7 +524,6 @@ header {
 		&.meta {
 			margin-top: 20px;
 			margin-bottom: 5px;
-			color: #666;
 			a {
 				color: #666;
 				text-decoration: none;
@@ -530,9 +533,18 @@ header {
 	h4 {
 		margin-top: 0;
 		color: #252525;
-		font-size: 22px;
-		@media(max-width: @screen-sm-m) {
-			margin-bottom: 40px;
+		font-size: 24px;
+	}
+	&.blog-roll {
+		p.meta {
+			@media(max-width: @screen-sm-m) {
+				margin-top: 15px;
+			}
+		}
+		h4 {
+			@media(max-width: @screen-sm-m) {
+				margin-bottom: 30px;
+			}
 		}
 	}
 }
@@ -549,6 +561,7 @@ header {
 		&.sub-title {
 			@media(min-width: @screen-xs-m) {
 				font-size: 20px;
+				font-weight: 600;
 			}
 		}
 	}
@@ -562,7 +575,7 @@ header {
 			margin-bottom: 10px;
 			color: #005731;
 			font-family: @lato;
-			font-weight: 700;
+			font-weight: 600;
 			@media(min-width: @screen-xs) {
 				font-size: 18px;
 			}
@@ -624,13 +637,17 @@ header {
 /* ---- Blog Page ---- */
 .blog-header {
 	h2 {
-		margin-bottom: 80px;
+		margin-bottom: 130px;
 		font-weight: 400;
 		text-align: left;
+		text-transform: none;
+		@media(max-width: @screen-xs-m) {
+			margin-bottom: 40px;
+		}
 	}
 }
 .blog-cat {
-	padding: 20px 0;
+	padding: 25px 0;
 	background-color: #F0F0F0;
 	.cat-wrap {
 		display: table;
@@ -639,6 +656,10 @@ header {
 	ul {
 		margin: 0;
 		li {
+			@media(min-width: @screen-xs) {
+				padding-left: 10px;
+				padding-right: 10px;
+			}
 			a {
 				color: #252525;
 				&.selected {
@@ -656,6 +677,12 @@ header {
 		.posts-row {
 			margin-top: 0;
 			margin-bottom: 30px;
+			p.meta {
+				margin: 10px 0 0;
+			}
+			.item {
+				margin-bottom: 22px;
+			}
 		}
 		.elm-button {
 			padding: 10px 40px;
@@ -683,6 +710,7 @@ header {
 	background-color: #0B5833;
 	p {
 		margin: 0;
+		color: @white;
 	}
 	a {
 		color: @white;
@@ -793,14 +821,9 @@ header {
     .transition(background-color .3s ease-in-out);
     h4 {
       font-size: 20px;
-      font-weight: 600;
       text-align: left;
       @media(max-width: @screen-sm-m) {
         font-size: 17px;
-      }
-      span {
-        color: #d3046e;
-        font-weight: 600;
       }
     }
   }
@@ -818,6 +841,7 @@ header {
 	        content: "\f078"; 
 	        float: right; 
 	        .transition(all .3s ease-in-out);
+	        -webkit-text-stroke: 1px @white;
 	        @media(max-width: @screen-sm-m) {
 	          padding: 7px 7px 5px;
 	          font-size: 13px;
@@ -826,6 +850,7 @@ header {
 	      &.collapsed {
 	        &:after {
 	           content: "\f054";
+	           -webkit-text-stroke: 1px @white;
 	        }
 	      }
       }
@@ -871,8 +896,9 @@ header {
 	}
 	.form-control {
 		border-radius: 10px;
-		@media(min-width: @screen-xs) {
-			height: 55px;
+		height: 55px;
+		@media(max-width: @screen-xs-m) {
+			height: 45px;
 		}
 	}
 	.form-group {
@@ -901,12 +927,15 @@ header {
 		text-align: center;
 	}
 	p {
+		color: @white;
+		font-weight: 300;
 		@media(min-width: @screen-lg) {
 			margin-top: 7px;
 		}
 	}
 	a {
 		color: @white;
+		font-weight: 300;
 		&.download {
 			margin-left: 20px;
 			@media(max-width: @screen-lg-m) {
@@ -926,6 +955,7 @@ header {
 				margin: 7px 0;
 			}
 			li {
+				padding-right: 1px;
 				a {
 					width: 32px;
 			    height: 32px;

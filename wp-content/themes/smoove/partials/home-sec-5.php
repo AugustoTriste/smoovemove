@@ -1,4 +1,4 @@
-<div class="section-5 blog-section">
+<div class="section-5 blog-section blog-roll">
     <div class="container wow fadeInUp" data-wow-duration="1s" data-wow-delay="750ms">
 		<div class="row text-center">
 			<div class="col-sm-8 col-center">
