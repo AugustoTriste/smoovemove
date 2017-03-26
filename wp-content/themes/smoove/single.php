@@ -29,7 +29,7 @@
 								</div>
 								<div class="col-xs-6">
 									<div class="cat text-right wow fadeIn" data-wow-duration="1s" data-wow-delay="750ms">
-										<?php _e("", "wpbootstrap"); ?> <?php the_category(', '); ?>
+										Share
 									</div>
 								</div>
 							</div><!-- /.row -->
