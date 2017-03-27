@@ -29,7 +29,17 @@
 								</div>
 								<div class="col-xs-6">
 									<div class="cat text-right wow fadeIn" data-wow-duration="1s" data-wow-delay="750ms">
-										Share
+										<div class="social-wrap">
+											<input type="checkbox" class="checkbox" id="share" checked>
+											<label for="share" class="label">Share</label>
+											<div class="social">
+												<ul>
+													<li><a href="http://test.co.uk" target="_blank" class="fa fa-facebook"></a></li>
+													<li><a href="http://test.co.uk" target="_blank" class="fa fa-twitter"></a></li>
+													<li><a href="http://test.co.uk" target="_blank" class="fa fa-linkedin"></a></li>
+												</ul>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div><!-- /.row -->

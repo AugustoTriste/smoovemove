@@ -91,6 +91,18 @@ jQuery(document).ready(function($) {
 		dots: true
     });
 
+    var blogNav = $("ul#filters li:first-child a");
+
+	$("ul#filters li  a").click(function() {
+		if (blogNav.hasClass("selected")) {
+    	$(".blog-nav").show(); 
+	    } else {
+	    	$("blog-nav").hide();
+	    }
+	});
+
+	$('#share').prop('checked', false);
+
     // Sticky Nav
 	var $header = $("#navbar-scroll"),
         $clone = $header.before($header.clone().addClass("clone"));
