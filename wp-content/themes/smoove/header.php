@@ -53,7 +53,12 @@
 					
 				</div>
 				<div class="button hidden-lg">
-				    <a class="btn-open" href="#"></a>
+				    <!-- <a class="btn-open" href="#"></a> -->
+				    <span class="hamburger-icon" title="Menu">
+						<span class="line line-1"></span>
+						<span class="line line-2"></span>
+						<span class="line line-3"></span>
+					</span>
 				</div>
 
 				<div class="overlay">

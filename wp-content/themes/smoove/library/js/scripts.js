@@ -91,15 +91,40 @@ jQuery(document).ready(function($) {
 		dots: true
     });
 
+    // Sticky Nav
+	var $header = $("#navbar-scroll"),
+        $clone = $header.before($header.clone().addClass("clone"));
+
+    // Add and remove z-index on clone navbar
+    $(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+	    if (scroll >= 400) {
+	        $(".clone").addClass("on-top");
+	    } else if(scroll <=400) {
+	    	$(".clone").removeClass("on-top");
+	    }
+	});
+    
+    $(window).on("scroll", function() {
+        var fromTop = $(window).scrollTop();
+        $("body").toggleClass("down", (fromTop > 400));
+    });
+
+	var hamburger = $('span.hamburger-icon');
+		hamburger.click(function() {
+			hamburger.toggleClass('active');
+		return false;
+	});
+
     // Overlay menu
-    $(".button a").click(function(){
+    $("span.hamburger-icon").click(function(){
         $(".overlay").fadeToggle(200);
        $(this).toggleClass('btn-open').toggleClass('btn-close');
     });
 
     $('.overlay').on('click', function(){
 	    $(".overlay").fadeToggle(200);   
-	    $(".button a").toggleClass('btn-open').toggleClass('btn-close');
+	    $("span.hamburger-icon").toggleClass('btn-open').toggleClass('btn-close');
 	    open = false;
 	});
 
@@ -117,15 +142,6 @@ jQuery(document).ready(function($) {
 	  });    
 	}
 	scrollBanner();
-
-	// Sticky Nav
-	var $header = $("#navbar-scroll"),
-        $clone = $header.before($header.clone().addClass("clone"));
-    
-    $(window).on("scroll", function() {
-        var fromTop = $(window).scrollTop();
-        $("body").toggleClass("down", (fromTop > 400));
-    });
 
     //Isotope
 	var $container = $('#isotope-list'); //The ID for the list with all the blog posts
