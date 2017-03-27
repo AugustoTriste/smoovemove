@@ -64,15 +64,8 @@
 									<div class="inner-nav dis-cell align-middle">
 										<?php wp_bootstrap_main_nav(); // Overlay Nav ?>
 										<div class="bottom clearfix row">
-								            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer1') ) : ?>
-								            <?php endif; ?>
 								            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer2') ) : ?>
 								            <?php endif; ?>
-								            <div class="col-lg-4">
-								            	<nav class="clearfix">
-													<?php wp_bootstrap_footer_links(); // Adjust using Menus in Wordpress Admin ?>
-												</nav>
-								            </div>
 								        </div>
 									</div>
 								</div>
