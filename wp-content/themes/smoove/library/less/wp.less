@@ -440,7 +440,7 @@ header {
 .section {
 	padding: 112px 0;
 	@media(max-width: @screen-xs-m) {
-		padding: 44px 0;
+		padding: 50px 0;
 	}
 }
 
@@ -456,7 +456,7 @@ header {
 }
 
 .mb-section {
-	padding: 40px 0;
+	padding: 50px 0;
 	background-color: #F5F5F5;
 	h2 {
 		margin-top: 0;
@@ -485,7 +485,7 @@ header {
 	padding: 112px 0;
 	text-align: center;
 	@media(max-width: @screen-xs-m) {
-		padding: 44px 0;
+		padding: 50px 0;
 	}
 	img {
 		margin-bottom: 20px;
@@ -574,7 +574,7 @@ header {
 .section-4 {
 	padding: 112px 0;
 	@media(max-width: @screen-xs-m) {
-		padding: 34px 0;
+		padding: 50px 0;
 	}
 	.main-text {
 		margin-bottom: 80px;
@@ -584,6 +584,9 @@ header {
 	}
 	h2 {
 		color: @dark-grey;
+		@media(max-width: @screen-xs-m) {
+			margin-top: 0;
+		}
 	}
 	p {
 		&.sub-title {
@@ -639,7 +642,12 @@ header {
 	padding: 112px 0;
 	background-color: #F0F0F0;
 	@media(max-width: @screen-sm-m) {
-		padding: 34px 0;
+		padding: 50px 0;
+	}
+	h2 {
+		@media(max-width: @screen-xs-m) {
+			margin-top: 0;
+		}
 	}
 }
 
@@ -657,6 +665,9 @@ header {
 	}
 	.posts-row {
 		margin-top: 50px;
+		@media(max-width: @screen-xs-m) {
+			margin-top: 40px;
+		}
 		img {
 			width: 100%;
 			.center-block();
@@ -1306,6 +1317,9 @@ div.wpcf7-mail-sent-ok {
 			@media(max-width: @screen-lg-m) {
 				margin: 7px 0;
 			}
+			@media(max-width: @screen-xs-m) {
+				margin: 14px 0;
+			}
 			li {
 				padding-right: 1px;
 				a {
@@ -1335,6 +1349,10 @@ div.wpcf7-mail-sent-ok {
 				@media(max-width: @screen-lg-m) {
 					margin: 10px 0 0 -60px;
 				}
+				@media(max-width: @screen-xs-m) {
+					margin: 10px auto;
+					padding: 0;
+				}
 				li{
 					margin-left: 30px;
 					font-family: @lato;
@@ -1345,6 +1363,7 @@ div.wpcf7-mail-sent-ok {
 					}
 					@media(max-width: @screen-xs-m) {
 						float: none;
+						margin-bottom: 10px;
 					}
 				}
 			}
