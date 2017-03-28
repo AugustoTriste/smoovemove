@@ -1158,13 +1158,19 @@ header {
 }
 
 button.close {
-	margin: 10px;
+	margin: 10px 10px 0 0;
 	opacity: 1;
 	text-shadow: none;
+	@media(max-width: @screen-xs-m) {
+		margin: 5px 5px 0 0;
+	}
 	i.fa-times {
 		color: @white;
 		font-size: 30px;
 		-webkit-text-stroke: 3px rgba(0, 0, 0, 0.8);
+		@media(max-width: @screen-xs-m) {
+			font-size: 24px;
+		}
 	}
 }
 
@@ -1179,6 +1185,7 @@ div.wpcf7-mail-sent-ok {
 	@media(max-width: @screen-xs-m) {
 		padding: 44px 0;
 	}
+
 }
 .contact-form-cont {
 	h2.title {
@@ -1231,6 +1238,22 @@ div.wpcf7-mail-sent-ok {
 		margin-top: 100px;
 		@media(max-width: @screen-sm-m) {
 			margin-top: 60px;
+		}
+		@media(max-width: @screen-xs-m) {
+			margin-top: 30px;
+		}
+		p.sub-title {
+			@media(max-width: @screen-xs-m) {
+				margin-bottom: 10px;
+			}
+		}
+		.form-control {
+			@media(max-width: @screen-xs-m) {
+				height: 36px;
+				&.submit-btn {
+					padding-top: 10px;
+				}
+			}
 		}
 	}
 }
