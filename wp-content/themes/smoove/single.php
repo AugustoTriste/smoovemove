@@ -34,14 +34,20 @@
 											<label for="share" class="label">Share</label>
 											<div class="social">
 												<ul>
-													<li><a href="http://test.co.uk" target="_blank" class="fa fa-facebook"></a></li>
-													<li><a href="http://test.co.uk" target="_blank" class="fa fa-twitter"></a></li>
-													<li><a href="http://test.co.uk" target="_blank" class="fa fa-linkedin"></a></li>
+													<li class="facebook">
+														<a href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>&amp;t=<?php the_title(); ?>" class="fa fa-facebook" title="Share on Facebook." target="_blank"></a>
+													</li>
+													<li class="twitter">
+														<a href="http://twitter.com/home/?status=<?php the_title(); ?> - <?php the_permalink(); ?>" class="fa fa-twitter" title="Tweet this!" target="_blank"></a>
+													</li>
+													<li class="linkedin">
+														<a href="http://www.linkedin.com/shareArticle?mini=true&amp;title=<?php the_title(); ?>&amp;url=<?php the_permalink(); ?>" class="fa fa-linkedin" title="Share on LinkedIn" target="_blank"></a>
+													</li>
 												</ul>
-											</div>
-										</div>
-									</div>
-								</div>
+											</div><!-- /.social -->
+										</div><!-- /.social-wrap -->
+									</div><!-- /.cat -->
+								</div><!-- /.col-xs-6 -->
 							</div><!-- /.row -->
 						</div>
 					</div><!-- /.row -->
