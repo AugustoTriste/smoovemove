@@ -174,7 +174,7 @@ header {
 		padding: 20px 40px;
 		background-color: rgba(19, 97, 61, 0.9);
 		border-radius: 0;
-		z-index: 999;
+		z-index: 1;
 		@media(max-width: @screen-xs-m) {
 			padding: 10px;
 		}
@@ -183,16 +183,16 @@ header {
 	    top: -82px;
 	    left: 0;
 	    right: 0;
-	    z-index: 999;
+	    z-index: 1;
 	    .transition(0.4s top cubic-bezier(.3,.73,.3,.74))
 		}
 		&.on-top {
-			z-index: 9999;
+			z-index: 2;
 		}
 		a {
 			&.logo {
 				position: relative;
-				z-index: 999;
+				z-index: 3;
 				display: block;
 				padding-top: 3px;
 				img {
@@ -404,7 +404,7 @@ header {
 	width:100%;
 	background: #13613D;
 	overflow:auto;
-	z-index:99;
+	z-index: 2;
 	margin-left: -41px;
 	@media(max-width: @screen-xs-m) {
 		margin-left: -11px;

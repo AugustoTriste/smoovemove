@@ -101,7 +101,7 @@ jQuery(document).ready(function($) {
 	    }
 	});
 
-	$('#share, #share-2').prop('checked', false);
+	$('#share').prop('checked', false);
 
     // Sticky Nav
 	var $header = $("#navbar-scroll"),
