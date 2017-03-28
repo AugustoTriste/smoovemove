@@ -131,20 +131,22 @@
 			<?php elseif( get_row_layout() == 'contact_section' ): ?>
 
 			<div class="contact-section">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-6 col-md-8 col-center text-center wow fadeInUp" data-wow-delay="750ms" data-wow-duration="1500ms">
-							<h2 class="title"><?php echo the_sub_field("title"); ?></h2>
-							<p class="sub-title"><?php echo the_sub_field("sub_title"); ?></p>
+				<div class="contact-form-cont">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-6 col-md-8 col-center text-center wow fadeInUp" data-wow-delay="750ms" data-wow-duration="1500ms">
+								<h2 class="title"><?php echo the_sub_field("title"); ?></h2>
+								<p class="sub-title"><?php echo the_sub_field("sub_title"); ?></p>
+							</div>
 						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-12 wow fadeInUp" data-wow-delay="750ms" data-wow-duration="1500ms">
-							<?php echo the_sub_field("contact_form"); ?>
+						<div class="row">
+							<div class="col-sm-12 wow fadeInUp" data-wow-delay="750ms" data-wow-duration="1500ms">
+								<?php echo the_sub_field("contact_form"); ?>
+							</div>
 						</div>
-					</div>
-				</div>
-			</div>
+					</div><!-- /.container -->
+				</div><!-- /.contact-form-cont -->
+			</div><!-- /.contact-section -->
 
 
 		    <?php endif;
