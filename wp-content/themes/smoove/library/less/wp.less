@@ -1153,16 +1153,39 @@ header {
   }
 }
 
+.modal-backdrop.modal-backdrop {
+  opacity: 0.8;
+}
+
+button.close {
+	margin: 10px;
+	opacity: 1;
+	text-shadow: none;
+	i.fa-times {
+		color: @white;
+		font-size: 30px;
+		-webkit-text-stroke: 3px rgba(0, 0, 0, 0.8);
+	}
+}
+
+div.wpcf7-validation-errors,
+div.wpcf7-mail-sent-ok {
+	color: @white;
+}
+
 .contact-section {
 	padding: 98px 0;
 	background-color: #252525;
 	@media(max-width: @screen-xs-m) {
 		padding: 44px 0;
 	}
+}
+.contact-form-cont {
 	h2.title {
 		margin-bottom: 30px;
 		color: @white;
 		font-size: 50px;
+		text-align: center;
 		@media(max-width: @screen-xs-m) {
 			font-size: 30px;
 		}
@@ -1172,6 +1195,7 @@ header {
 		color: @white;
 		font-family: @lato;
 		font-size: 20px;
+		text-align: center;
 		@media(max-width: @screen-xs-m) {
 			font-size: 14px;
 		}
@@ -1201,6 +1225,12 @@ header {
 			@media(max-width: @screen-xs-m) {
 				padding-top: 20px;
 			}
+		}
+	}
+	&.modal-form {
+		margin-top: 100px;
+		@media(max-width: @screen-sm-m) {
+			margin-top: 60px;
 		}
 	}
 }

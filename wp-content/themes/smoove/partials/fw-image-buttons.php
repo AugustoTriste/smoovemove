@@ -6,25 +6,32 @@
 					<div class="inner-container dis-cell align-middle wow fadeInUp" data-wow-duration="1s" data-wow-delay="750ms">
 						<h2><?php echo the_sub_field("title"); ?></h2>
 						<p class="sub-title"><?php echo the_sub_field("sub_title"); ?></p>
-						<div class="row">
-							<?php
-					            if(have_rows("buttons_row")):
-					                while(have_rows("buttons_row")): the_row();              
-					        ?>
-								<div>
-									<div class="col-sm-6 text-center wow fadeInUp" data-wow-duration="1s">
-										<h3><?php echo the_sub_field("button_title"); ?></h3>
-										<a href="<?php the_sub_field("button_url"); ?>" class="btn btn-orange" target="_blank"><?php echo the_sub_field("button_text"); ?></a>
-									</div>
-								</div>                   
-					        <?php
-					            endwhile;
-					            endif;
-					        ?>
-						</div>
+						<div class="row wow fadeInUp" data-wow-duration="1s">
+							<div class="col-sm-6 text-center">
+								<h3><?php echo the_sub_field("button_register_title"); ?></h3>
+								<a href="<?php the_sub_field("button_register_url"); ?>" class="btn btn-orange" data-toggle="modal" data-target=".register-form"><?php echo the_sub_field("button_register_text"); ?></a>
+								<!-- Large modal -->
+
+							</div>
+							<div class="col-sm-6 text-center">
+								<h3><?php echo the_sub_field("button_phone_title"); ?></h3>
+								<a href="<?php the_sub_field("button_phone_number"); ?>" class="btn btn-orange" target="_blank"><?php echo the_sub_field("button_phone_number"); ?></a>
+							</div>
+						</div><!-- /.row -->
 					</div>
 				</div><!-- /.dis-ta -->
 			</div><!-- /.col-sm-5 -->
+
 		</div><!-- /.row -->
 	</div><!-- /.container -->
 </div><!-- /.section -->
+<div class="modal fade register-form" tabindex="-1" role="dialog" aria-labelledby="registerForm">
+	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times"></i></span></button>
+	<div class="modal-dialog" role="document">
+		<div class="contact-form-cont modal-form">
+			<h2 class="title"><?php echo the_sub_field("modal_form_title"); ?></h2>
+			<p class="sub-title"><?php echo the_sub_field("modal_form_subtitle"); ?></p>
+			<?php echo the_sub_field("modal_form_id"); ?>
+		</div>
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
