@@ -41,7 +41,7 @@
           
 				<div class="navbar-header">
 					<a class="logo" title="<?php echo get_bloginfo('description'); ?>" href="<?php echo home_url(); ?>">
-						<img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="">
+						<img src="<?php bloginfo('template_directory'); ?>/images/logo.svg" alt="Smoovemove" class="main-logo">
 					</a>
 				</div>
 

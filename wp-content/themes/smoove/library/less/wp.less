@@ -175,6 +175,9 @@ header {
 		background-color: rgba(19, 97, 61, 0.9);
 		border-radius: 0;
 		z-index: 1;
+		@media(max-width: @screen-sm-m) {
+			padding: 20px 30px;
+		}
 		@media(max-width: @screen-xs-m) {
 			padding: 10px;
 		}
@@ -189,17 +192,19 @@ header {
 		&.on-top {
 			z-index: 2;
 		}
+		.main-logo {
+			width: 173px;
+			height: 33px;
+			@media(max-width: @screen-xs-m) {
+				max-width: 130px;
+				height: 27px;
+			}
+		}
 		a {
 			&.logo {
 				position: relative;
 				z-index: 3;
 				display: block;
-				padding-top: 3px;
-				img {
-					@media(max-width: @screen-xs-m) {
-						max-width: 130px;
-					}
-				}
 			}
 		}
 		.navbar-nav {
@@ -281,7 +286,7 @@ header {
   height: 28px;
   position: absolute;
 	right: 3px;
-	top: 4px;
+	top: 3px;
   display: block;
   z-index: 999;
   cursor: pointer;
@@ -294,7 +299,7 @@ header {
   @media(max-width: @screen-xs-m) {
   	width: 28px;
   	height: 22px;
-  	top: -22px;
+  	top: -24px;
   	right: 1px;
   }
  }
