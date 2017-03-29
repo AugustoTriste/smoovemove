@@ -136,6 +136,13 @@ if ( ! isset( $content_width ) ) $content_width = 580;
 add_image_size( 'wpbs-featured', 1280, 872, true );
 add_image_size( 'blog-list', 735, 500, true );
 
+function add_svg_to_upload_mimes( $upload_mimes ) {
+  $upload_mimes['svg'] = 'image/svg+xml';
+  $upload_mimes['svgz'] = 'image/svg+xml';
+  return $upload_mimes;
+}
+add_filter( 'upload_mimes', 'add_svg_to_upload_mimes', 10, 1 );
+
 /* 
 to add more sizes, simply copy a line from above 
 and change the dimensions & name. As long as you
