@@ -12,6 +12,7 @@
 		<title><?php wp_title( '|', true, 'right' ); ?></title>	
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
   		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+  		<link rel="icon" type="image/svg+xml" href="<?php bloginfo('template_directory'); ?>/images/square_logo.svg">
 
 		<!-- wordpress head functions -->
 		<?php wp_head(); ?>

@@ -747,6 +747,9 @@ header {
 	.mini-logo {
 		max-width: 82px;
 		margin: 70px 0 20px;
+		@media(min-width: @screen-sm) and (max-width: @screen-md-m) {
+			margin: 9px 0 10px;
+		}
 		@media(max-width: @screen-sm-m) {
 			max-width: 60px;
 			margin: 10px 0 20px;
@@ -1118,8 +1121,21 @@ header {
 	@media(max-width: @screen-xs-m) {
 		padding: 10px 0;
 	}
+	h2 {
+		font-size: 30px;
+	}
 	.posts-row {
 		margin-top: 10px;
+	}
+	p.meta {
+		@media(max-width: @screen-sm-m) {
+			margin-top: 15px;
+		}
+	}
+	h4 {
+		@media(max-width: @screen-sm-m) {
+			margin-bottom: 30px;
+		}
 	}
 }
 /* ---- end Blog Page ---- */
