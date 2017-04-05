@@ -646,6 +646,14 @@ header {
 			padding-left: 20px;
 			p {
 				text-align: left;
+				@media(min-width: @screen-sm) and (max-width: @screen-md-m) {
+					max-height: 70px;
+					overflow: hidden;
+				}
+				@media(max-width: @screen-xs-m) {
+					max-height: 70px;
+					overflow: hidden;
+				}
 			}
 		}
 	}
