@@ -175,7 +175,7 @@ header {
 	.navbar {
 		margin-bottom: 0;
 		padding: 20px 40px;
-		background-color: rgba(19, 97, 61, 0.9);
+		background-color: #13613D;
 		border-radius: 0;
 		z-index: 1;
 		@media(max-width: @screen-sm-m) {
@@ -190,6 +190,7 @@ header {
 	    left: 0;
 	    right: 0;
 	    z-index: 1;
+	    background-color: rgba(19, 97, 61, 0.9);
 	    .transition(0.4s top cubic-bezier(.3,.73,.3,.74))
 		}
 		&.on-top {
@@ -208,7 +209,7 @@ header {
 				position: relative;
 				z-index: 3;
 				display: block;
-				padding-top: 3px;
+				padding-top: 1px;
 			}
 		}
 		.navbar-nav {
@@ -447,8 +448,8 @@ header {
 		margin-bottom: -74px;
 	}
 	@media(max-width: @screen-xs-m) {
-		top: -50px;
-		margin-bottom: -50px;
+		top: 0;
+		margin-bottom: 0;
 	}
 }
 /* ---- end Header ---- */
