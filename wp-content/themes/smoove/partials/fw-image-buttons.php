@@ -7,13 +7,13 @@
 						<h2><?php echo the_sub_field("title"); ?></h2>
 						<p class="sub-title"><?php echo the_sub_field("sub_title"); ?></p>
 						<div class="row wow fadeInUp" data-wow-duration="1s">
-							<div class="col-sm-6 text-center">
+							<div class="col-xs-6 text-center">
 								<h3><?php echo the_sub_field("button_register_title"); ?></h3>
 								<a href="<?php the_sub_field("button_register_url"); ?>" class="btn btn-orange" data-toggle="modal" data-target=".register-form"><?php echo the_sub_field("button_register_text"); ?></a>
 								<!-- Large modal -->
 
 							</div>
-							<div class="col-sm-6 text-center">
+							<div class="col-xs-6 text-center">
 								<h3><?php echo the_sub_field("button_phone_title"); ?></h3>
 								<a href="<?php the_sub_field("button_phone_number"); ?>" class="btn btn-orange" target="_blank"><?php echo the_sub_field("button_phone_number"); ?></a>
 							</div>
