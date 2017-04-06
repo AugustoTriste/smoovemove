@@ -1,19 +1,36 @@
 <?php get_header(); ?>
 
-		<div class="top-section bg-full parallax-header wow fadeIn" style="background-image: url(<?php the_field('blog_bg_image', get_option('page_for_posts')); ?>);">
-		    <div class="container-fluid">
-				<div class="row">
-					<div class="col-md-6 col-center">
-						<div class="dis-ta header-text parallax-text">
-							<div class="text-container dis-cell text-center align-middle wow fadeInUp" data-wow-delay="750ms" data-wow-duration="1500ms">
-								<h2><?php the_field('blog_title', get_option('page_for_posts')); ?></h2>
-								<h3><?php the_field('blog_sub_title', get_option('page_for_posts')); ?></h3>
+		<div class="top-section bg-full parallax-header wow fadeIn hidden-mb" style="background-image: url(<?php the_field('blog_bg_image', get_option('page_for_posts')); ?>);">
+			<div class="tablet-bg-image bg-full" style="background-image: url(<?php the_field('tablet_background_image', get_option('page_for_posts')); ?>);">
+			    <div class="container-fluid">
+					<div class="row">
+						<div class="col-md-6 col-center">
+							<div class="dis-ta header-text parallax-text">
+								<div class="text-container dis-cell text-center align-middle wow fadeInUp" data-wow-delay="750ms" data-wow-duration="1500ms">
+									<h2><?php the_field('blog_title', get_option('page_for_posts')); ?></h2>
+									<h3><?php the_field('blog_sub_title', get_option('page_for_posts')); ?></h3>
+								</div>
 							</div>
 						</div>
-					</div>
+					</div><!-- /.row -->
+				</div><!-- /.container -->
+			</div><!-- /.tablet-bg-image -->
+		</div><!-- /.section -->
+
+		<div class="mb-sec-bg mb-mid-bg visible-mb" style="background-image: url(<?php the_field('mobile_background_image', get_option('page_for_posts')); ?>);">
+    
+		</div><!-- /.section -->
+
+		<div class="mb-section mv-guides visible-mb">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-8 col-center text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="750ms">
+						<h2><?php the_field('blog_title', get_option('page_for_posts')); ?></h2>
+						<p class="sub-title"><?php the_field('blog_sub_title', get_option('page_for_posts')); ?></p>
+					</div><!-- /.col-sm-5 -->
 				</div><!-- /.row -->
 			</div><!-- /.container -->
-		</div><!-- /.section -->
+		</div><!-- /.middle-mb-bg -->
 
 		<div class="blog-cat">
 			<div class="container">
