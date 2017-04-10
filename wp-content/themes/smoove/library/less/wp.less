@@ -167,6 +167,10 @@ p {
 		}
 	}
 }
+
+.button-row {
+	margin-top: 50px;
+}
 /* ---- end Global ---- */
 
 /* ---- Header ---- */
@@ -770,6 +774,55 @@ header {
 			.center-block();
 			@media(max-width: @screen-xs-m) {
 				max-width: 175px;
+			}
+		}
+	}
+	&.mobile-left {
+		@media(min-width: @screen-lg) {
+			padding-top: 100px;
+		}
+		.mini-logo {
+			margin: 150px 0 20px;
+			@media(max-width: @screen-md-m) {
+				margin: 50px 0 20px;
+			}
+			@media(max-width: @screen-sm-m) {
+				margin-top: 10px;
+			}
+		}
+		.right-image {
+			img {
+				max-width: 458px;
+				@media(max-width: @screen-sm-m) {
+					max-width: 338px;
+					margin-top: 60px;
+				}
+				@media(max-width: @screen-xs-m) {
+					max-width: 238px;
+				}
+			}
+		}
+	}
+	&.mobile-right {
+		@media(min-width: @screen-lg) {
+			padding-top: 100px;
+		}
+		.mini-logo {
+			margin: 60px 0 20px;
+			@media(max-width: @screen-md-m) {
+				margin-top: 10px;
+			}
+		}
+		.right-image {
+			img {
+				max-width: 458px;
+				@media(max-width: @screen-md-m) {
+					max-width: 338px;
+					margin-top: 60px;
+				}
+				@media(max-width: @screen-xs-m) {
+					max-width: 238px;
+				}
 			}
 		}
 	}
